@@ -222,8 +222,8 @@
         
         .modal-dialog {
             top: 5%;
-            width: auto;
-            height: auto;
+            width: 100%;
+            height: 100%;
         }
         
         .modal-content {
@@ -232,16 +232,21 @@
         }
         
         .modal-body {
-            height: auto;
+            padding: 0px 0px;
+            height: fit-content;
         }
         
         .fechaModal {
-            float: left;
+            float: right;
+            margin-top: -20px;
+            margin-right: -20px;
             background: #cc0000;
             border: none;
             color: #fff;
             font-size: 35px;
             font-weight: 700;
+            width: 50px;
+            height: 50px;
             z-index: 9999;
             cursor: pointer;
             position: relative;
@@ -1270,6 +1275,23 @@ input[type=reset].btn-block,
 input[type=submit].btn-block {
     width: 100%
 }
+.icontainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 100%;
+    /* 16:9 Aspect Ratio */
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
     </style>
 </head>
 
@@ -1630,11 +1652,11 @@ input[type=submit].btn-block {
 
             <div class="row">
                 <div class="col-md-6">
-
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.426381844952!2d-99.14863788509457!3d19.350681986930972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fdea83072205%3A0x762481276f0ce59d!2sXiiber!5e0!3m2!1ses-419!2smx!4v1601917528147!5m2!1ses-419!2smx"
                         text-align="center " width="300 " height="225 " frameborder="0 " style="border:0; " allowfullscreen=" " aria-hidden="false " tabindex="0 "></iframe>
-
                 </div>
+
+
                 <!-- col-md-6 -->
                 <div class="col-md-5 col-md-offset-1 ">
                     <div itemprop="event" itemscope itemtype="https://schema.org/Event">
@@ -1854,7 +1876,11 @@ input[type=submit].btn-block {
                 <button type="button" class="fechaModal" data-dismiss="modal">×</button>
 
                 <p>.
-                    <iframe src="https://www.xiiber.com/socialxiiber.html " width="80% " height="450 " style="border:none; " text-align="center " title="Contactos "> </iframe>
+
+                    <div class="icontainer">
+                        <iframe class="responsive-iframe" src="https://www.xiiber.com/socialxiiber.html"></iframe>
+                    </div>
+
                 </p>
 
 
@@ -2000,6 +2026,9 @@ input[type=submit].btn-block {
 </body>
 
 </html>
+
+</html>
+
 
 </html>
 
