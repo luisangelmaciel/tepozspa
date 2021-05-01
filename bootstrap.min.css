@@ -8791,6 +8791,14 @@ button.close {
     content: "\f081"
 }
 
+. fa-google: before {
+    content: "\ f1a0"
+}
+
+. fa-tripadvisor: before {
+    content: "\ f262"
+}
+
 .fa-facebook-square:before {
     content: "\f082"
 }
