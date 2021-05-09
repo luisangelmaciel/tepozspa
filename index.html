@@ -1489,9 +1489,80 @@ p {
                 <button class="collapsible"><div><meta itemprop="paymentAccepted" content="Cash, Credit Card"/>Banco Azteca</div></button>
                 <div class="content">
                     <p><br>
-                        <b style="color:#000066;">Datos Generales</b><br><br>
-                        <b>Tarjeta de débito:</b> 4027 6657 4930 1926 <br>
-                        <b>Número de cuenta:</b> 2545 1332 4628 82<br> Tarjeta de débito a nombre de <i>Luis Maciel </i><br>
+                        <table class="w3-table">
+                            <tr>
+                                <td>
+                                    <p> Banco receptor </p>
+                                </td>
+                                <td>
+                                    <p> <b>Banco Azteca </b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p> Nombre receptor <i class="fa fa-clone" onclick="myFunctionz()"></i></p>
+                                </td>
+                                <td> <input type="text" value="Luis Angel Maciel Padilla" id="myInput2"></td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p> CLABE Interbancaria <i class="fa fa-clone" onclick="myFunction()"></i> </p>
+                                </td>
+                                <td> <input type="text" value="1271 8001 3324 6288 22 " id="myInput1"></td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p> Tarjeta de débito <i class="fa fa-clone" onclick="tarjetadebito()"></i> </p>
+                                </td>
+                                <td> <input type="text" value="4027 6657 4930 1926 " id="debito"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p> Número de cuenta <i class="fa fa-clone" onclick="numcuenta()"></i></p>
+                                </td>
+                                <td> <input type="text" value="2545 1332 4628 82 " id="cuenta"></td>
+                            </tr>
+                        </table>
+                        <script>
+                            function numcuenta() {
+                                var copyText = document.getElementById("cuenta");
+                                copyText.select();
+                                copyText.setSelectionRange(0, 99999)
+                                document.execCommand("copy");
+                                alert("Número de cuenta copiada " + copyText.value);
+                            }
+                        </script>
+                        <script>
+                            function tarjetadebito() {
+                                var copyText = document.getElementById("debito");
+                                copyText.select();
+                                copyText.setSelectionRange(0, 99999)
+                                document.execCommand("copy");
+                                alert("Tarjeta de débito copiada " + copyText.value);
+                            }
+                        </script>
+                        <script>
+                            function myFunction() {
+                                var copyText = document.getElementById("myInput1");
+                                copyText.select();
+                                copyText.setSelectionRange(0, 99999)
+                                document.execCommand("copy");
+                                alert("Copiada la CLABE " + copyText.value);
+                            }
+                        </script>
+                        <script>
+                            function myFunctionz() {
+                                var copyText = document.getElementById("myInput2");
+                                copyText.select();
+                                copyText.setSelectionRange(0, 99999)
+                                document.execCommand("copy");
+                                alert("Copiado el nombre receptor " + copyText.value);
+                            }
+                        </script>
+
+
                         <i class="fa fa-exclamation-circle" style="font-size:6x;color:red"> En referencia anota tu numero de celular y nombre </i><br><br>
                 </div>
                 <button class="collapsible"><div><meta itemprop="paymentAccepted" content="Cash, Credit Card"/>Banca por internet</div></button>
