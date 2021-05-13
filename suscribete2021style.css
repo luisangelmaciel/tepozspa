@@ -72,7 +72,7 @@ body {
 
 .c-subscribe-box {
     width: 600px;
-    height: 520px;
+    height: auto;
     overflow: hidden;
     position: relative;
     box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
