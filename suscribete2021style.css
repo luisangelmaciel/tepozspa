@@ -109,6 +109,45 @@ body {
     margin-top: auto;
 }
 
+.c-subscribe-boxx {
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
+    border-radius: var(--border-radius-outer);
+    justify-content: center;
+    align-items: center;
+}
+
+.c-subscribe-boxx__wrapper {
+    width: calc(100% - var(--border-width));
+    height: calc(100% - var(--border-width));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 1.2rem 1rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-inner);
+}
+
+.c-subscribe-boxx__title {
+    font-size: 1.6rem;
+}
+
+.c-subscribe-boxx__desc {
+    font-size: 0.935rem;
+    margin: 0.7rem auto 1.8rem;
+    max-width: 240px;
+}
+
+.c-subscribe-boxx__form {
+    margin-top: auto;
+}
+
 .c-form--accent input:hover,
 .c-form--accent input:active,
 .c-form--accent input:focus {
