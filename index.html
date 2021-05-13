@@ -65,21 +65,40 @@
     <meta property="twitter:card " content="summary ">
     <meta property="twitter:site " content="@xiibertravel ">
     <meta property="twitter:domain " content="xiiber.com ">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:card " content="summary_large_image " />
     <meta name="twitter:title " content="Viaje en bus desde CDMX a TepozSpa " />
     <meta name="twitter:image " content="https://tepozspa.xiiber.com/fotos/viajes-gay-solteros-novios-tepozspa-reserva-tu-lugar.webp" />
+    <meta name="twitter:image:alt" content="Summary Card" />
     <meta name='twitter:description' content='Excursion, viaje en grupo en bus desde la CDMX, salida del metro General Anaya. Aparta con el 50%. Whatsapp 55 3979 3727.'>
     <meta name="twitter:site" content="@xiibertravel" />
     <meta name="twitter:label1" content="Tiempo de lectura">
     <meta name="twitter:data1" content="17 minutos">
 
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:site" content="@xiibertravel" />
+    <meta name="twitter:title" content="Twitter Player Card Implementation" />
+    <meta name="twitter:description" content="This is a sample video to test player card." />
+    <meta name="twitter:image" content="https://tepozspa.xiiber.com/fotos/viajes-gay-solteros-novios-tepozspa-reserva-tu-lugar.webp" />
+    <meta name="twitter:player" content="https://www.xiiber.com/alberca_home.html" />
+    <meta name="twitter:player:width" content="480" />
+    <meta name="twitter:player:height" content="480" />
+    <meta name="twitter:player:stream" content="https://www.xiiber.com/alberca_tepozspa.mp4" />
+    <meta name="twitter:player:stream:content_type" content="video/mp4" />
+    <!--   <meta name="twitter:player:width" content="720" />
+    <meta name="twitter:player:height" content="720" /> -->>
+
     <link rel="canonical" href="https://tepozspa.xiiber.com/" />
     <link rel="icon" href="https://tepozspa.xiiber.com/fotos/ico.webp" sizes="192x192" id="favicon" type="image/x-icon" />
     <link rel="preload" as="font">
 
+
+
+    <link rel="stylesheet" href="https://www.xiiber.com//logo_xiiber.css">
+
     <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css'>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./whatsstyle.css">
+
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
 
     <style>
@@ -88,202 +107,6 @@
         @media (max-width: 600px) {}
         
         @media (min-width: 601px) {}
-        /*#floating-menu*/
-        /*#floating-menu*/
-        
-        #floating-menu {
-            cursor: pointer;
-        }
-        
-        #floating-iccli {
-            overflow: hidden;
-            position: fixed;
-            z-index: 99999;
-            bottom: 15px;
-            right: 15px;
-            background-color: #660066;
-            width: 50px;
-            height: 50px;
-            border-radius: 25px;
-        }
-        
-        #floating-icon span {
-            display: block;
-            width: 5px;
-            height: 5px;
-            background-color: #fff;
-            margin: 0 auto;
-            margin-bottom: 5px;
-            border-radius: 50px;
-        }
-        
-        #floating-ligar,
-        #floating-whatsapp,
-        #floating-emergencia {
-            display: none;
-            overflow: hidden;
-            position: fixed;
-            z-index: 99998;
-            width: 40px;
-            height: 40px;
-            border-radius: 25px;
-            color: #fff;
-            font-size: 20px;
-        }
-        
-        #floating-ligar {
-            right: 20px;
-            bottom: 20px;
-            background-color: #4da6ff;
-            -webkit-animation: slide-ligar .75s forwards;
-            -webkit-animation-delay: .75s;
-            animation: slide-ligar .75s forwards;
-            animation-delay: .75s;
-        }
-        
-        #floating-icon,
-        #floating-ligar,
-        #floating-whatsapp,
-        #floating-emergencia {
-            -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-            -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-        }
-        
-        @-webkit-keyframes slide-ligar {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 20px;
-                bottom: 100px;
-            }
-        }
-        
-        @keyframes slide-ligar {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 20px;
-                bottom: 100px;
-            }
-        }
-        
-        #floating-whatsapp {
-            right: 20px;
-            bottom: 20px;
-            background-color: #009933;
-            -webkit-animation: slide-whatsapp .75s forwards;
-            -webkit-animation-delay: .75s;
-            animation: slide-whatsapp .75s forwards;
-            animation-delay: .75s;
-        }
-        
-        @-webkit-keyframes slide-whatsapp {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 70px;
-                bottom: 70px;
-            }
-        }
-        
-        @keyframes slide-whatsapp {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 70px;
-                bottom: 70px;
-            }
-        }
-        
-        #floating-emergencia {
-            right: 20px;
-            bottom: 20px;
-            background-color: #d00829;
-            -webkit-animation: slide-emergencia .75s forwards;
-            -webkit-animation-delay: .75s;
-            animation: slide-emergencia .75s forwards;
-            animation-delay: .75s;
-        }
-        
-        @-webkit-keyframes slide-emergencia {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 100px;
-                bottom: 20px;
-            }
-        }
-        
-        @keyframes slide-emergencia {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 100px;
-                bottom: 20px;
-            }
-        }
-        
-        #floating-menu svg {
-            width: 20px;
-            height: 20px;
-            display: block;
-            margin: 0 auto;
-            margin-top: 10px;
-        }
-        
-        #floating-menu a {
-            color: #fff;
-        }
-        /* Modal */
-        
-        .modal-open {
-            overflow: auto;
-        }
-        
-        .modal-dialog {
-            top: 5%;
-            width: 90%;
-            height: 85%;
-        }
-        
-        .modal-content {
-            border-radius: 0;
-            height: fit-content;
-        }
-        
-        .modal-body {
-            padding: 0px 0px;
-            height: auto;
-        }
-        
-        .fechaModal {
-            float: right;
-            margin-top: -20px;
-            margin-right: -20px;
-            background: #cc0000;
-            border: none;
-            color: #fff;
-            font-size: 35px;
-            font-weight: 700;
-            width: 50px;
-            height: 50px;
-            z-index: 9999;
-            cursor: pointer;
-            position: relative;
-        }
         /*On Customer's Request*/
         /*  
     Theme Name: Xiiber  Tepozspa
@@ -1358,6 +1181,10 @@ p {
     </script>
     <!-- bye tepozspa.xiiber.com (noscript) -->
 
+    <!-- Logo -->
+    <a onclick="document.location='https://www.xiiber.com/'" class="logo">
+        <img src="https://www.xiiber.com/sgv/ico.svg" alt="Xiiber Travel ">
+    </a>
 
     <div id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -1961,9 +1788,10 @@ p {
 
 
     <div class="container inner text-center">
-        <h2 class="section-title text-center"><span itemprop="name">Preventa a precio especial</span></h2>
-        <p class="lead main text-center"><span itemprop="description"> Reserva con anticipación</span></p>
-        <a href="registrate.html" title="Recibe las preventas a precio especial"> <button type="submit" class="btn btn-danger btn-lg text-center">¡Las quiero!</button></a><br><br><br>
+        <h2 class="text-center"><span itemprop="name"> ¿Quieres recibir alertas de los próximos viajes con precio de preventa especial? </span></h2>
+
+        <h2 class="text-center"><span itemprop="name"> </span></h2>
+        <a href="registrate1.html" title="Recibe las preventas a precio especial"> <button type="submit" class="btn btn-danger btn-lg text-center">Si, enviamelas</button></a><br><br><br>
     </div>
     <!-- /.registrate -->
 
@@ -2083,7 +1911,7 @@ p {
 
                     <div class="modal-body">
                         <div class="icontainer">
-                            <iframe class="responsive-iframe" src="https://www.xiiber.com/socialxiiber.html"></iframe>
+                            <iframe class="responsive-iframe" src="registrate1.html"></iframe>
                         </div>
 
                     </div>
@@ -2210,19 +2038,11 @@ p {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-        /*         
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Adiciona/Remove a classe 'floating-aberto', 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            executando o efeito no menu flutuante
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   */
-        $('#floating-icon').click(function() {
-            $('#floating-ligar').toggle();
-            $('#floating-whatsapp').toggle();
-            $('#floating-emergencia').toggle();
-        });
+        executando o efeito no menu flutuante
     </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-
+    <script src="whatsscript.js"></script>
 
 </body>
 
