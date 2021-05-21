@@ -3,6 +3,28 @@
  *	---------------------------------------------
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.xiiber {
+    font-size: 50px;
+    line-height: 80px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
+}
+
+@keyframes background-slide {
+    100% {
+        background-position: -8160px;
+    }
+}
+
 .ticket-wrap {
     text-align: center;
 }
@@ -11,7 +33,7 @@
     display: inline-block;
     margin: 0 auto;
     border: 2px solid #9facbc;
-    font-family: "Roboto", "FF DIN", "Franklin Gothic", "Helvetica Neue", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-feature-settings: "kern" 1;
     background: #fff;
 }
@@ -45,9 +67,17 @@
 }
 
 .ticket__co-name {
-    font-size: 2.5em;
-    font-variation-settings: "wght" 500, "wdth" 75;
-    letter-spacing: -.01em;
+    font-size: 50px;
+    line-height: 80px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
 }
 
 .ticket__co-subname {
@@ -61,14 +91,14 @@
 
 .ticket__route {
     font-variation-settings: "wght" 300;
-    font-size: 2em;
+    font-size: 28px;
     line-height: 1.1;
 }
 
 .ticket__description {
     margin-top: .5em;
     font-variation-settings: "wght" 350;
-    font-size: 1.125em;
+    font-size: 18px;
     color: #506072;
 }
 
@@ -99,19 +129,19 @@
     display: block;
     margin-bottom: .5em;
     font-variation-settings: "wght" 300;
-    font-size: .875em;
+    font-size: 14px;
     color: #506072;
 }
 
 .ticket__detail {
     font-variation-settings: "wght" 700;
-    font-size: 1.25em;
+    font-size: 20px;
     color: #424f5e;
 }
 
 .ticket__admit {
     margin-top: 2rem;
-    font-size: 2.5em;
+    font-size: 25px;
     font-variation-settings: "wght" 700, "wdth" 85;
     line-height: 1;
     color: #657990;
