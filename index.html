@@ -11,7 +11,7 @@
 -->
 
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es-MX" Cache-Control "max-age=2592000, public">
 
 <head>
     <!-- Google Tag Manager -->
@@ -43,9 +43,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="theme-color" content="#4285f4">
     <meta http-equiv="X-UA-Compatible " content="IE=edge ">
-    <meta http-equiv="pragma" content="no-cache" />
-    <meta http-equiv="cache-control" content="no-cache,must-revalidate" />
-    <meta http-equiv="expires" content="0" />
+
 
     <!-- HiHello.monster! Tag Manager -->
     <meta name="keywords " content="A club for gay men, TepozSpa Tepoztlán, TepozSpa Morelos, TepozSpa Gay, Sauna Tepoztlán, Tepospa, Tepoz spa, Tepos spa, Tepozpa, Viajes gay, turismo gay, Guía de saunas gais,
@@ -60,7 +58,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="sgv/apple/touch-icon-iphone-retina.png">
     <link rel="apple-touch-icon" sizes="167x167" href="sgv/apple/touch-icon-ipad-retina.png">
     <link rel="apple-touch-startup-image" href="sgv/apple//launch.png">
-    <meta name="apple-mobile-web-app-title" content="AppTitle">
+    <meta name="apple-mobile-web-app-title" content="Xiiber Trave, viajes a gay">
     <meta name="theme-color" content="#317EFB" />
 
 
@@ -81,7 +79,7 @@
     <meta property="og:image:width " content="1080 " />
     <meta property="og:image:height " content="400 " />
     <meta property="og:image:alt " content="Hombres gay que gustan de viajar y pasarla bien " />
-    <meta property=" og:video " content="https://example.com/movie.swf " />
+    <meta property="og:video " content="https://example.com/movie.swf " />
     <meta property="og:video:secure_url " content="https://secure.example.com/movie.swf " />
     <meta property="og:video:type " content="website " />
     <meta property="og:video:width " content="400 " />
@@ -119,18 +117,343 @@
     <link rel="preload" as="font">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&display=swap" rel="stylesheet">
+
 
     <!-- Complementos -->
 
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="./whatsstyle.css">
+    <link rel="stylesheet" href="https://tepozspa.xiiber.com/whatsstyle.css">
+    <link href="css/xiib-icon.css" rel="stylesheet ">
+
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
-    </style>
 
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    </style>
+    <style>
+        .xiier-dots {
+            width: 76px;
+            height: 12px;
+            display: flex;
+        }
+        
+        .xiier-dots:before,
+        .xiier-dots:after {
+            content: "";
+            flex: 1;
+            background: radial-gradient(farthest-side, currentColor 90%, #0000) center/12px 100%, radial-gradient(farthest-side at right, currentColor 90%, #0000) right /6px 100%;
+            background-repeat: no-repeat;
+            transform: scale(var(--s, 1)) translate(0px) rotate(0);
+            animation: d10 2s infinite;
+        }
+        
+        .xiier-dots:after {
+            --s: -1;
+        }
+        
+        @keyframes d10 {
+            25% {
+                transform: scale(var(--s, 1)) translate(-10px) rotate(0);
+            }
+            50% {
+                transform: scale(var(--s, 1)) translate(-10px) rotate(1turn);
+            }
+            75%,
+            100% {
+                transform: scale(var(--s, 1)) translate(0px) rotate(1turn);
+            }
+        }
+        /**/
+        
+        #floating-menu {
+            cursor: pointer;
+        }
+        
+        #floating-icon {
+            overflow: hidden;
+            position: fixed;
+            z-index: 99999;
+            bottom: 15px;
+            right: 15px;
+            background-color: #ffffff;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+        }
+        
+        #floating-icon span {
+            display: block;
+            width: 5px;
+            height: 5px;
+            background-color: #cccccc;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            border-radius: 50px;
+        }
+        
+        #floating-ligar,
+        #floating-whatsapp,
+        #floating-emergencia {
+            display: none;
+            overflow: hidden;
+            position: fixed;
+            z-index: 99998;
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 20px;
+        }
+        
+        #floating-ligar {
+            right: 20px;
+            bottom: 20px;
+            background-color: #4da6ff;
+            -webkit-animation: slide-ligar .75s forwards;
+            -webkit-animation-delay: .75s;
+            animation: slide-ligar .75s forwards;
+            animation-delay: .75s;
+        }
+        
+        #floating-icon,
+        #floating-ligar,
+        #floating-whatsapp,
+        #floating-emergencia {
+            -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+        }
+        
+        @-webkit-keyframes slide-ligar {
+            0% {
+                right: 20px;
+                bottom: 20px;
+            }
+            100% {
+                right: 20px;
+                bottom: 100px;
+            }
+        }
+        
+        @keyframes slide-ligar {
+            0% {
+                right: 20px;
+                bottom: 20px;
+            }
+            100% {
+                right: 20px;
+                bottom: 100px;
+            }
+        }
+        
+        #floating-whatsapp {
+            right: 20px;
+            bottom: 20px;
+            background-color: #009900;
+            -webkit-animation: slide-whatsapp .75s forwards;
+            -webkit-animation-delay: .75s;
+            animation: slide-whatsapp .75s forwards;
+            animation-delay: .75s;
+        }
+        
+        @-webkit-keyframes slide-whatsapp {
+            0% {
+                right: 20px;
+                bottom: 20px;
+            }
+            100% {
+                right: 70px;
+                bottom: 70px;
+            }
+        }
+        
+        @keyframes slide-whatsapp {
+            0% {
+                right: 20px;
+                bottom: 20px;
+            }
+            100% {
+                right: 70px;
+                bottom: 70px;
+            }
+        }
+        
+        #floating-commenting {
+            right: 20px;
+            bottom: 20px;
+            background-color: #0ec4f1;
+            -webkit-animation: slide-commenting .75s forwards;
+            -webkit-animation-delay: .75s;
+            animation: slide-commenting .75s forwards;
+            animation-delay: .75s;
+        }
+        
+        @-webkit-keyframes slide-commenting {
+            0% {
+                right: 20px;
+                bottom: 20px;
+            }
+            100% {
+                right: 70px;
+                bottom: 70px;
+            }
+        }
+        
+        @keyframes slide-commenting {
+            0% {
+                right: 20px;
+                bottom: 20px;
+            }
+            100% {
+                right: 70px;
+                bottom: 70px;
+            }
+        }
+        
+        #floating-emergencia {
+            right: 20px;
+            bottom: 20px;
+            background-color: #d00829;
+            -webkit-animation: slide-emergencia .75s forwards;
+            -webkit-animation-delay: .75s;
+            animation: slide-emergencia .75s forwards;
+            animation-delay: .75s;
+        }
+        
+        @-webkit-keyframes slide-emergencia {
+            0% {
+                right: 20px;
+                bottom: 20px;
+            }
+            100% {
+                right: 100px;
+                bottom: 20px;
+            }
+        }
+        
+        @keyframes slide-emergencia {
+            0% {
+                right: 20px;
+                bottom: 20px;
+            }
+            100% {
+                right: 100px;
+                bottom: 20px;
+            }
+        }
+        
+        #floating-menu svg {
+            width: 20px;
+            height: 20px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        
+        #floating-menu a {
+            color: #fff;
+        }
+        /* Modal */
+        
+        .fechaModal {
+            float: right;
+            margin-top: -20px;
+            margin-right: -20px;
+            background: #ffffff;
+            border: none;
+            color: rgb(0, 0, 0);
+            font-size: 35px;
+            font-weight: 700;
+            width: 50px;
+            height: 50px;
+            z-index: 9999;
+            cursor: pointer;
+            position: relative;
+        }
+        /* ModalFullSecciones  */
+        
+        @media (max-width: 767px) {
+            .modal-fullscreen-xs-down {
+                padding: 0 !important;
+            }
+            .modal-fullscreen-xs-down .modal-dialog {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .modal-fullscreen-xs-down .modal-content {
+                height: auto;
+                min-height: 100%;
+                border: 0 none;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+        
+        @media (max-width: 991px) {
+            .modal-fullscreen-sm-down {
+                padding: 0 !important;
+            }
+            .modal-fullscreen-sm-down .modal-dialog {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .modal-fullscreen-sm-down .modal-content {
+                height: auto;
+                min-height: 100%;
+                border: 0 none;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+        
+        @media (max-width: 1199px) {
+            .modal-fullscreen-md-down {
+                padding: 0 !important;
+            }
+            .modal-fullscreen-md-down .modal-dialog {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .modal-fullscreen-md-down .modal-content {
+                height: auto;
+                min-height: 100%;
+                border: 0 none;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+        
+        .modal-fullscreen {
+            padding: 0 !important;
+        }
+        
+        .modal-fullscreen .modal-dialog {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .modal-fullscreen .modal-content {
+            height: auto;
+            min-height: 100%;
+            border: 0 none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        
+        .btn-open-modal {
+            margin-bottom: 0.5em;
+        }
+    </style>
     <style>
 /*  
     Theme Name: Xiiber Travel Tepozspa
@@ -1184,6 +1507,24 @@ p {
     margin: 4px;
     font-size: 100%;
 }
+.pulsing-10 {
+    display: grid;
+    font-size: 50px;
+}
+.pulsing-10:before,
+.pulsing-10:after {
+    content:attr(data-c);
+    grid-area: 1/1;
+}
+.pulsing-10:after {
+    animation:pl10 1s infinite;
+}
+@keyframes pl10 {
+    to {
+        transform:scale(1.8);
+        opacity:0
+    }
+}
     </style>
 
 
@@ -1206,7 +1547,7 @@ p {
 
 
 
-
+    <div class="xiier-dots"></div>
 
     <div id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -1218,7 +1559,8 @@ p {
                 <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <h2> <img src="fotos/tepozspa-viaje-gay-solteros-y-parejas.webp" alt="Xiiber Viajes gay México. Bus a Tepozspa" width="237" height="32" title="Viajes gay con destino a Tepozspa"> </h2>
+                    <h1 style="font-size:1px">
+                        <img src="fotos/tepozspa-viaje-gay-solteros-y-parejas.png" alt="Xiiber Viajes gay México. Bus a Tepozspa" width="237" height="32" title="Viajes gay con destino a Tepozspa"> </h1>
                 </a>
             </div>
             <!-- navbar-header -->
@@ -1262,7 +1604,7 @@ p {
                 </div>
             </div>
             <div class="bottom text-center">
-                <a href="#scrollDownArrow"><i class="fa fa-chevron-down"></i></a>
+                <a href="#inicio"><i class="fa fa-chevron-down"></i></a>
             </div>
         </div>
     </div>
@@ -1418,7 +1760,7 @@ p {
                                 <td>
                                     <p> Tarjeta de débito <i class="fa fa-clone " onclick="tarjetadebito() "></i> </p>
                                 </td>
-                                <td> <input type="text " value="4027 6657 4930 1926 " id="debito "></td>
+                                <td> <input type="text " value="4027 6657 4930 1926 " id="debito " style="font-size: 12px;"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -1714,7 +2056,7 @@ p {
                     <p> Durante el recorrido, haremos una rifa, te invitamos a participar. Agradecemos cuides de las instalaciones del bus. Al finalizar el recorrido encontrarás una bolsa para tirar tu basura.
                         <br>El tiempo estimado de llegada a la CDMX, es a las 11:00pm. Descendemos frente al Metro General Anaya, dirección centro. <br></p>
                     <br>
-                    <b >Muchas gracias tu confianza y esperamos vernos nuevamente en otro viaje a Tepoz o quizás alguno más largo como <strong>Acapulco o Puerto Vallarta</strong>.</b>
+                    <b>Muchas gracias tu confianza y esperamos vernos nuevamente en otro viaje a Tepoz o quizás alguno más largo como <strong>Acapulco o Puerto Vallarta</strong>.</b>
                 </article>
             </article>
         </div>
@@ -1824,7 +2166,7 @@ p {
             <div class="container inner ">
                 <div class="social-bar ">
                     <div class="bottom text-center ">
-                        <i class="fa fa-chevron-up " id="scrollDownArrow " title="Sube "></i>
+                        <i class="fa fa-chevron-up " id="inicio " title="Sube "></i>
                     </div>
                     <p style="font-size:18px; color:white; ">
                         <a href="https://www.tripadvisor.com.mx/Attraction_Review-g150800-d21347352-Reviews-Xiiber-Mexico_City_Central_Mexico_and_Gulf_Coast.html " target="_blank " class="fa fa-tripadvisor tooltipped " title="Calificación de 5 en Tripadvisor
@@ -1872,6 +2214,8 @@ p {
         <br>
         <p style="font-size: 12px;">Las marcas y logotipos mostrados en este sitio web son únicamente informativos y los derechos corresponden a sus respectivos dueños.
         </p>
+
+
         <br><br><br>
     </div>
 
@@ -1886,70 +2230,70 @@ p {
                 <img itemprop="image " style="display:none;visibility:hidden " src="https://tepozspa.xiiber.com/fotos/LocalBusiness " alt="Xiiber " />
             </div>
             <div id="floating-ligar " style="display: block; ">
-                <a href="tel: 5539793727 " >
-                    <svg class="svg-inline--fa fa-phone fa-w-16 "  data-prefix="fas " data-icon="phone " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 512 512 " data-fa-i2svg=" "><path fill="currentColor " d="M493.397
-                            24.615l-104-23.997c-11.314-2.611-22.879 3.252-27.456 13.931l-48 111.997a24 24 0 0 0 6.862 28.029l60.617 49.596c-35.973 76.675-98.938 140.508-177.249 177.248l-49.596-60.616a24 24 0 0 0-28.029-6.862l-111.997 48C3.873 366.516-1.994
-                            378.08.618 389.397l23.997 104C27.109 504.204 36.748 512 48 512c256.087 0 464-207.532 464-464 0-11.176-7.714-20.873-18.603-23.385z "></path></svg>
+                <a href="tel: 5539793727 ">
+                    <svg class="svg-inline--fa fa-phone fa-w-16 " data-prefix="fas " data-icon="phone " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 512 512 " data-fa-i2svg=" "><path fill="currentColor " d="M493.397 24.615l-104-23.997c-11.314-2.611-22.879
+            3.252-27.456 13.931l-48 111.997a24 24 0 0 0 6.862 28.029l60.617 49.596c-35.973 76.675-98.938 140.508-177.249 177.248l-49.596-60.616a24 24 0 0 0-28.029-6.862l-111.997 48C3.873 366.516-1.994 378.08.618 389.397l23.997 104C27.109 504.204 36.748 512
+            48 512c256.087 0 464-207.532 464-464 0-11.176-7.714-20.873-18.603-23.385z "></path></svg>
                     <!-- <i class="fas fa-phone "></i> -->
                 </a>
             </div>
             <div id="floating-whatsapp " style="display: block; ">
                 <a href="https://www.whatsapp.com/catalog/5215539793727?app_absent=">
-                    <svg class=" svg-inline--fa fa-whatsapp fa-w-14 "  data-prefix="fab " data-icon="whatsapp " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 448 512 " data-fa-i2svg=" "><path fill="currentColor " d="M380.9
-                            97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8
-                            18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5
-                            2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1
-                            5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z "></path></svg>
+                    <svg class=" svg-inline--fa fa-whatsapp fa-w-14 " data-prefix="fab " data-icon="whatsapp " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 448 512 " data-fa-i2svg=" "><path fill="currentColor " d="M380.9 97.1C339 55.1
+            283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2
+            0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8
+            5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9
+            10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z "></path></svg>
                     <!-- <i class="fab fa-whatsapp "></i> -->
                 </a>
             </div>
             <div id="floating-emergencia " data-toggle="modal " data-target="#modal-fullscreen " style="display: block; ">
-                <svg class="svg-inline--fa fa-plus fa-w-14 "  data-prefix="fas " data-icon="plus " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 448 512 " data-fa-i2svg=" "><path fill="currentColor " d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3
-                            0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z "></path></svg>
+                <svg class="svg-inline--fa fa-plus fa-w-14 " data-prefix="fas " data-icon="plus " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 448 512 " data-fa-i2svg=" "><path fill="currentColor " d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3
+            0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z "></path></svg>
                 <!-- <i class="fas fa-plus "></i> -->
             </div>
         </div>
 
         <div id="floating-ligar " style="display: none; ">
-            <span itemprop="telephone ">  <a href="tel: 5539793727 "  class="phone-mobile">
+            <span itemprop="telephone ">  <a href="tel: 5539793727 "  class="phone-mobile ">
                 <svg class="svg-inline--fa fa-phone fa-w-16 "  data-prefix="fas " data-icon="phone " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 512 512 " data-fa-i2svg=" "><path fill="currentColor " d="M493.397 24.615l-104-23.997c-11.314-2.611-22.879
-                            3.252-27.456 13.931l-48 111.997a24 24 0 0 0 6.862 28.029l60.617 49.596c-35.973 76.675-98.938 140.508-177.249 177.248l-49.596-60.616a24 24 0 0 0-28.029-6.862l-111.997 48C3.873 366.516-1.994 378.08.618 389.397l23.997 104C27.109 504.204
-                            36.748 512 48 512c256.087 0 464-207.532 464-464 0-11.176-7.714-20.873-18.603-23.385z "></path></svg>
+            3.252-27.456 13.931l-48 111.997a24 24 0 0 0 6.862 28.029l60.617 49.596c-35.973 76.675-98.938 140.508-177.249 177.248l-49.596-60.616a24 24 0 0 0-28.029-6.862l-111.997 48C3.873 366.516-1.994 378.08.618 389.397l23.997 104C27.109 504.204 36.748 512
+            48 512c256.087 0 464-207.532 464-464 0-11.176-7.714-20.873-18.603-23.385z "></path></svg>
                 <!-- <i class="fas fa-phone "></i> -->
             </a> </span>
         </div>
         <div id="floating-whatsapp " style="display: none; ">
-            <span itemprop="telephone ">   <a href="https://www.whatsapp.com/catalog/5215539793727?app_absent=" class="link">
-                <svg class=" svg-inline--fa fa-whatsapp fa-w-14 "  data-prefix="fab " data-icon="whatsapp " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 448 512 " data-fa-i2svg=" "><path fill="currentColor " d="M380.9
-                            97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8
-                            18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5
-                            2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1
-                            5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z "></path></svg>
+            <span itemprop="telephone ">   <a href="https://www.whatsapp.com/catalog/5215539793727?app_absent=" class=" link ">
+                <svg class=" svg-inline--fa fa-whatsapp fa-w-14 "  data-prefix="fab " data-icon="whatsapp " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 448 512 " data-fa-i2svg=" "><path fill="currentColor " d="M380.9 97.1C339 55.1 283.2
+            32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2
+            0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8
+            5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9
+            10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z "></path></svg>
                 <!-- <i class="fab fa-whatsapp "></i> -->
             </a></span>
         </div>
         <div id="floating-emergencia " data-toggle="modal " data-target="#modal-fullscreen " style="display: none; ">
-            <svg class="svg-inline--fa fa-plus fa-w-14 "  data-prefix="fas " data-icon="plus " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 448 512 " data-fa-i2svg=" "><path fill="currentColor " d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3
-                            0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z "></path></svg>
+            <svg class="svg-inline--fa fa-plus fa-w-14 " data-prefix="fas " data-icon="plus " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 448 512 " data-fa-i2svg=" "><path fill="currentColor " d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3
+            0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z "></path></svg>
             <!-- <i class="fas fa-plus "></i> -->
         </div>
 
 
         <!-- Modal-Fullscreen -->
-        <div class="modal fade modal-fullscreen " id="modal-fullscreen " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel "  style="display: none; ">
+        <div class="modal fade modal-fullscreen " id="modal-fullscreen " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel " style="display: none; ">
             <div class="modal-dialog ">
                 <div class="modal-content ">
                     <div class="modal-body ">
                         <button type="button " class="close " data-dismiss="modal " aria-hidden="true ">&times;</button>
                         <iframe src="http://www.xiiber.com/secciones.html " " name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; ">
-                            </iframe>
-                </div>
-            </div>
-        </div>
-        </div>
+        </iframe>
+    </div>
+    </div>
+    </div>
+    </div>
 
 
-        <!-- <div class="modal fade col-lg-12 " id="modalUrgencia " role="dialog ">
+    <!-- <div class="modal fade col-lg-12 " id="modalUrgencia " role="dialog ">
             <div class="modal-dialog ">
                 <div class="modal-content ">
                     <button type="button " class="fechaModal " data-dismiss="modal ">×</button>
@@ -1961,131 +2305,70 @@ p {
                 </div>
             </div>
         </div> -->
-        </div>
+    </div>
 
-        <script>
-            script.js(function($, sr) {
-                // debouncing function from Luis Angel MacPad
-                // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
-                var debounce = function(func, threshold, execAsap) {
-                        var timeout;
-                        return function debounced() {
-                            var obj = this,
-                                args = arguments;
+    <script>
+        script.js(function($, sr) {
+            // debouncing function from Luis Angel MacPad
+            // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+            var debounce = function(func, threshold, execAsap) {
+                    var timeout;
+                    return function debounced() {
+                        var obj = this,
+                            args = arguments;
 
-                            function delayed() {
-                                if (!execAsap)
-                                    func.apply(obj, args);
-                                timeout = null;
-                            };
-                            if (timeout)
-                                clearTimeout(timeout);
-                            else if (execAsap)
+                        function delayed() {
+                            if (!execAsap)
                                 func.apply(obj, args);
-                            timeout = setTimeout(delayed, threshold || 100);
+                            timeout = null;
                         };
+                        if (timeout)
+                            clearTimeout(timeout);
+                        else if (execAsap)
+                            func.apply(obj, args);
+                        timeout = setTimeout(delayed, threshold || 100);
+                    };
+                }
+                // smartresize 
+            jQuery.fn[sr] = function(fn) {
+                return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
+            };
+        })(jQuery, 'smartresize');
+
+
+        $(document).ready(function() {
+                    ///////////////////////////////
+                    // Set Home Slideshow Height
+                    ///////////////////////////////
+                    function setHomeBannerHeight() {
+                        var windowHeight = jQuery(window).height();
+                        jQuery('#header').height(windowHeight);
                     }
-                    // smartresize 
-                jQuery.fn[sr] = function(fn) {
-                    return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
-                };
-            })(jQuery, 'smartresize');
-
-
-            $(document).ready(function() {
-                ///////////////////////////////
-                // Set Home Slideshow Height
-                ///////////////////////////////
-                function setHomeBannerHeight() {
-                    var windowHeight = jQuery(window).height();
-                    jQuery('#header').height(windowHeight);
-                }
-                ///////////////////////////////
-                // Center Home Slideshow Text
-                ///////////////////////////////
-                function centerHomeBannerText() {
-                    var bannerText = jQuery('#header > .center');
-                    var bannerTextTop = (jQuery('#header').actual('height') / 2) - (jQuery('#header > .center').actual('height') / 2) - 20;
-                    bannerText.css('padding-top', bannerTextTop + 'px');
-                    bannerText.show();
-                }
-                setHomeBannerHeight();
-                centerHomeBannerText();
-                //Resize events
-                jQuery(window).smartresize(function() {
+                    ///////////////////////////////
+                    // Center Home Slideshow Text
+                    ///////////////////////////////
+                    function centerHomeBannerText() {
+                        var bannerText = jQuery('#header > .center');
+                        var bannerTextTop = (jQuery('#header').actual('height') / 2) - (jQuery('#header > .center').actual('height') / 2) - 20;
+                        bannerText.css('padding-top', bannerTextTop + 'px');
+                        bannerText.show();
+                    }
                     setHomeBannerHeight();
                     centerHomeBannerText();
-                });
-
-                function scroll() {
-                    if ($(window).scrollTop() == 0) {
-                        //$('.nav > li').removeClass('active');
-                        console.log($(window).scrollTop());
-                    } else {
-
-                    }
-                }
-                document.onscroll = scroll;
-                var $scrollDownArrow = $('#scrollDownArrow');
-                var animateScrollDownArrow = function() {
-                    $scrollDownArrow.animate({
-                        top: 5,
-                    }, 400, " linear ", function() {
-                        $scrollDownArrow.animate({
-                            top: -5,
-                        }, 400, "linear ", function() {
-                            animateScrollDownArrow();
-                        });
-                    });
-                }
-                animateScrollDownArrow();
-                //Set Down Arrow Button
-                jQuery('#scrollDownArrow').click(function(e) {
-                    e.preventDefault();
-                    jQuery.scrollTo("#story ", 1000, {
-                        offset: -(jQuery('#header #menu').height()),
-                        axis: 'y'
-                    });
-                });
-                jQuery('.nav > li > a, #logo a').click(function(e) {
-                    e.preventDefault();
-
-                    jQuery.scrollTo(jQuery(this).attr('href'), 400, {
-                        offset: -(jQuery('#header #menu').height()),
-                        axis: 'y'
-                    });
-                });
-
-
-            });
-
-            // Scroll Down 
-            //Get the button
-            var mybutton = document.getElementById("myBtn ");
-
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {
-                scrollFunction()
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block ";
-                } else {
-                    mybutton.style.display = "none ";
-                }
-            }
-
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-            executando o efeito no menu flutuante
-        </script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-        <script src="whatsscript.js "></script>
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script>
+        /* 
+                                    Adiciona/Remove a classe 'floating-aberto', 
+                                    executando o efeito no menu flutuante
+                                    */
+        $('#floating-icon').click(function() {
+            $('#floating-ligar').toggle();
+            $('#floating-whatsapp').toggle();
+            $('#floating-emergencia').toggle();
+        });
+    </script>
 
 </body>
 
