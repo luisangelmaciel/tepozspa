@@ -1,11 +1,41 @@
-.icon-opciones-de-pago {
+.icon-faq {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe900;');
+}
+.icon-google {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe901;');
+}
+.icon-hihello-monster-color-hover {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe905;');
+}
+.icon-instagram {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe907;');
+}
+.icon-logo-xiiber-2021 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe914;');
+}
+.icon-whatsapp {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe915;');
+}
+.icon-xiiber-logo-horizontal-color {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe916;');
+}
+.icon-youtube {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe922;');
+}
+.icon-hhm {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe924;');
+}
+.icon-opciones-de-pago {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe925;');
+}
+.icon-visa {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe96b;');
+}
+.icon-logo-tepozspa-2021 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe96c;');
 }
 .icon-logo-xiiber-bus-a-tepozspa {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe933;');
-}
-.icon-xiiber-hover {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe93f;');
 }
 .icon-agregar-negocio {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe940;');
@@ -27,12 +57,6 @@
 }
 .icon-arrow-circle-arriba {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe947;');
-}
-.icon-arte-pop-vaso-tequilero {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe948;');
-}
-.icon-arte-starbucks-logo-minions-despicable-coffee-redesing-luisangelmaciel {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea10;');
 }
 .icon-avatar-bear {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea29;');
@@ -109,29 +133,14 @@
 .icon-celular-en-mano-tomar-foto {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeb88;');
 }
-.icon-cgt-4to-aniversario {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeb89;');
-}
-.icon-cgt-5to-aniversario {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xec4e;');
-}
 .icon-cgt-6to-aniversario {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xed15;');
-}
-.icon-cgt-8vo-aniversario-xiiber {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeddd;');
 }
 .icon-cgt-9vo-aniversario-xiiber-curvas {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xede9;');
 }
 .icon-cgt-logo {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xedf3;');
-}
-.icon-cgt-logo-azul {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xedf4;');
-}
-.icon-cgt-logo-azul-one {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xee94;');
 }
 .icon-cgt-proximo-destino {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xef5a;');
@@ -162,9 +171,6 @@
 }
 .icon-corriendo {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf094;');
-}
-.icon-donar-con-paypal {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf095;');
 }
 .icon-elipsis {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf096;');
@@ -202,12 +208,6 @@
 .icon-facebook-azul-letra {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a1;');
 }
-.icon-facebook-circular-negro-letra {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a5;');
-}
-.icon-facebook-letra {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a6;');
-}
 .icon-ferry {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a7;');
 }
@@ -217,26 +217,14 @@
 .icon-flecha-siguiente {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a9;');
 }
-.icon-frases-hoy-se-bebe-como-abogado-hasta-perder-el-juicio {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0aa;');
-}
-.icon-frases-hoy-se-bebe-como-abogado-hasta-perder-el-juicio-curvas {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ab;');
-}
 .icon-frases-menos-te-quiero-y-mas-tequila {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ac;');
 }
 .icon-frases-menos-te-quiero-y-mas-tequila-curva {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ad;');
 }
-.icon-frases-si-la-vida-te-da-limones-pide-tequila-y-sal {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ae;');
-}
 .icon-frases-si-la-vida-te-da-limones-pide-tequila-y-sal-curvas {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0af;');
-}
-.icon-frases-tomame-como-al-tequila-de-un-golpe-y-sin-pensarlo {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b0;');
 }
 .icon-frases-tomame-como-al-tequila-de-un-golpe-y-sin-pensarlo-curvas {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b1;');
@@ -268,12 +256,6 @@
 .icon-logo-casa-condesa-acapulco {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c4;');
 }
-.icon-logo-cgt-horizontal {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c5;');
-}
-.icon-logo-cgtravel-color {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf18d;');
-}
 .icon-logo-cgtravel-negro {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf255;');
 }
@@ -304,9 +286,6 @@
 .icon-logo-tepozspa {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf30d;');
 }
-.icon-logo-tepozspa-antiguo {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf30e;');
-}
 .icon-logo-tepozspa-nuevo {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf30f;');
 }
@@ -322,20 +301,8 @@
 .icon-logo-viajemos-todxs-por-mexico-turismo-gay-turismo-rosa-color {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf344;');
 }
-.icon-logo-xiiber-bus-a-tepozspa1 {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf367;');
-}
 .icon-logo-xiiber-horizontal-azul {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf373;');
-}
-.icon-logo-xiiber-tipo-app {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf37f;');
-}
-.icon-logo-xiiber-transparente {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf389;');
-}
-.icon-logo-xiiber-travel-appstore {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf393;');
 }
 .icon-mapa-de-sitio {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf3a4;');
@@ -375,9 +342,6 @@
 }
 .icon-notificaciones {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf3d2;');
-}
-.icon-opciones-de-pago1 {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf3d3;');
 }
 .icon-oracion-a-la-cerveza-santa-cerveza-que-estas-en-el-cielo-tan-refrescante-suena-tu-nopmbre-venga-a-mi-tarro-tu-cuerpo-salud {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf406;');
@@ -421,12 +385,6 @@
 .icon-poppers-originales {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf417;');
 }
-.icon-powerbottom {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf41b;');
-}
-.icon-powertop {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf433;');
-}
 .icon-remando {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf453;');
 }
@@ -444,9 +402,6 @@
 }
 .icon-rifa-one {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf458;');
-}
-.icon-santander-recompensas {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf459;');
 }
 .icon-secarse-las-manos {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf45a;');
@@ -484,9 +439,6 @@
 .icon-timbre-postal-viajemos-todex-por-mexico-gay-travel-xiiber {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf47d;');
 }
-.icon-timbtr-postal-cgtravel-mexico-gay {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf4a2;');
-}
 .icon-todo-incluido {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf56a;');
 }
@@ -514,23 +466,14 @@
 .icon-verificado {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5a7;');
 }
-.icon-versatile {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5a8;');
-}
 .icon-viajes {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5be;');
 }
 .icon-viajes-one {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5bf;');
 }
-.icon-visa {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5c0;');
-}
 .icon-wifi {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5c1;');
-}
-.icon-xiiber {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5c2;');
 }
 .icon-xiiber-circular {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5c3;');
@@ -541,20 +484,11 @@
 .icon-xiiber-circular-blanco-azul {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5c5;');
 }
-.icon-xiibergit {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5c8;');
-}
-.icon-xiiber-ico-appstore {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5c9;');
-}
 .icon-xiiber-logo-circular-rojo-negro {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5d1;');
 }
 .icon-xiiber-recomienda-negro-curvas {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5d4;');
-}
-.icon-xiiber-simple {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5d5;');
 }
 .icon-xiiber-vertical {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf5d6;');
