@@ -11,7 +11,7 @@
 -->
 
 <!DOCTYPE html>
-<html lang="es-MX" Cache-Control "max-age=2592000, public">
+<html lang="es-MX">
 
 <head>
     <!-- Google Tag Manager -->
@@ -38,8 +38,7 @@
     <title>TepozSpa | Viajes gay </title>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="Content-Language" content="es-mx">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="theme-color" content="#4285f4">
     <meta http-equiv="X-UA-Compatible " content="IE=edge ">
@@ -119,312 +118,14 @@
 
     <!-- Complementos -->
 
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="https://tepozspa.xiiber.com/whatsstyle.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
     <link href="css/xiibicon.css" rel="stylesheet ">
 
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-    </style>
-    <style>
-        .xiier-dots {
-            width: 76px;
-            height: 12px;
-            display: flex;
-        }
-        
-        .xiier-dots:before,
-        .xiier-dots:after {
-            content: "";
-            flex: 1;
-            background: radial-gradient(farthest-side, currentColor 90%, #0000) center/12px 100%, radial-gradient(farthest-side at right, currentColor 90%, #0000) right /6px 100%;
-            background-repeat: no-repeat;
-            transform: scale(var(--s, 1)) translate(0px) rotate(0);
-            animation: d10 2s infinite;
-        }
-        
-        .xiier-dots:after {
-            --s: -1;
-        }
-        
-        @keyframes d10 {
-            25% {
-                transform: scale(var(--s, 1)) translate(-10px) rotate(0);
-            }
-            50% {
-                transform: scale(var(--s, 1)) translate(-10px) rotate(1turn);
-            }
-            75%,
-            100% {
-                transform: scale(var(--s, 1)) translate(0px) rotate(1turn);
-            }
-        }
         /**/
-        
-        #floating-menu {
-            cursor: pointer;
-        }
-        
-        #floating-icon {
-            overflow: hidden;
-            position: fixed;
-            z-index: 99999;
-            bottom: 15px;
-            right: 15px;
-            background-color: #ffffff;
-            width: 50px;
-            height: 50px;
-            border-radius: 25px;
-        }
-        
-        #floating-icon span {
-            display: block;
-            width: 5px;
-            height: 5px;
-            background-color: #cccccc;
-            margin: 0 auto;
-            margin-bottom: 5px;
-            border-radius: 50px;
-        }
-        
-        #floating-ligar,
-        #floating-whatsapp,
-        #floating-emergencia {
-            display: none;
-            overflow: hidden;
-            position: fixed;
-            z-index: 99998;
-            width: 40px;
-            height: 40px;
-            border-radius: 25px;
-            color: #fff;
-            font-size: 20px;
-        }
-        
-        #floating-ligar {
-            right: 20px;
-            bottom: 20px;
-            background-color: #4da6ff;
-            -webkit-animation: slide-ligar .75s forwards;
-            -webkit-animation-delay: .75s;
-            animation: slide-ligar .75s forwards;
-            animation-delay: .75s;
-        }
-        
-        #floating-icon,
-        #floating-ligar,
-        #floating-whatsapp,
-        #floating-emergencia {
-            -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-            -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-        }
-        
-        @-webkit-keyframes slide-ligar {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 20px;
-                bottom: 100px;
-            }
-        }
-        
-        @keyframes slide-ligar {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 20px;
-                bottom: 100px;
-            }
-        }
-        
-        #floating-whatsapp {
-            right: 20px;
-            bottom: 20px;
-            background-color: #009900;
-            -webkit-animation: slide-whatsapp .75s forwards;
-            -webkit-animation-delay: .75s;
-            animation: slide-whatsapp .75s forwards;
-            animation-delay: .75s;
-        }
-        
-        @-webkit-keyframes slide-whatsapp {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 70px;
-                bottom: 70px;
-            }
-        }
-        
-        @keyframes slide-whatsapp {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 70px;
-                bottom: 70px;
-            }
-        }
-        
-        #floating-commenting {
-            right: 20px;
-            bottom: 20px;
-            background-color: #0ec4f1;
-            -webkit-animation: slide-commenting .75s forwards;
-            -webkit-animation-delay: .75s;
-            animation: slide-commenting .75s forwards;
-            animation-delay: .75s;
-        }
-        
-        @-webkit-keyframes slide-commenting {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 70px;
-                bottom: 70px;
-            }
-        }
-        
-        @keyframes slide-commenting {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 70px;
-                bottom: 70px;
-            }
-        }
-        
-        #floating-emergencia {
-            right: 20px;
-            bottom: 20px;
-            background-color: #d00829;
-            -webkit-animation: slide-emergencia .75s forwards;
-            -webkit-animation-delay: .75s;
-            animation: slide-emergencia .75s forwards;
-            animation-delay: .75s;
-        }
-        
-        @-webkit-keyframes slide-emergencia {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 100px;
-                bottom: 20px;
-            }
-        }
-        
-        @keyframes slide-emergencia {
-            0% {
-                right: 20px;
-                bottom: 20px;
-            }
-            100% {
-                right: 100px;
-                bottom: 20px;
-            }
-        }
-        
-        #floating-menu svg {
-            width: 20px;
-            height: 20px;
-            display: block;
-            margin: 0 auto;
-            margin-top: 10px;
-        }
-        
-        #floating-menu a {
-            color: #fff;
-        }
         /* Modal */
-        
-        .fechaModal {
-            float: right;
-            margin-top: -20px;
-            margin-right: -20px;
-            background: #ffffff;
-            border: none;
-            color: rgb(0, 0, 0);
-            font-size: 35px;
-            font-weight: 700;
-            width: 50px;
-            height: 50px;
-            z-index: 9999;
-            cursor: pointer;
-            position: relative;
-        }
         /* ModalFullSecciones  */
-        
-        @media (max-width: 767px) {
-            .modal-fullscreen-xs-down {
-                padding: 0 !important;
-            }
-            .modal-fullscreen-xs-down .modal-dialog {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            .modal-fullscreen-xs-down .modal-content {
-                height: auto;
-                min-height: 100%;
-                border: 0 none;
-                border-radius: 0;
-                box-shadow: none;
-            }
-        }
-        
-        @media (max-width: 991px) {
-            .modal-fullscreen-sm-down {
-                padding: 0 !important;
-            }
-            .modal-fullscreen-sm-down .modal-dialog {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            .modal-fullscreen-sm-down .modal-content {
-                height: auto;
-                min-height: 100%;
-                border: 0 none;
-                border-radius: 0;
-                box-shadow: none;
-            }
-        }
-        
-        @media (max-width: 1199px) {
-            .modal-fullscreen-md-down {
-                padding: 0 !important;
-            }
-            .modal-fullscreen-md-down .modal-dialog {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            .modal-fullscreen-md-down .modal-content {
-                height: auto;
-                min-height: 100%;
-                border: 0 none;
-                border-radius: 0;
-                box-shadow: none;
-            }
-        }
         
         .modal-fullscreen {
             padding: 0 !important;
@@ -444,13 +145,7 @@
             border-radius: 0;
             box-shadow: none;
         }
-        
-        .btn-open-modal {
-            margin-bottom: 0.5em;
-        }
-    </style>
-    <style>
-/*  
+        /*  
     Theme Name: Xiiber Travel Tepozspa
     Version:    1.14.20
     Author:     @LuisAngelMaciel 
@@ -530,11 +225,7 @@
         
         #header {
             background-image: url(https://tepozspa.xiiber.com/fotos/viajes-gay-tepozspa-01.webp);
-            -webkit-background-size: /*@@prefixmycss->No equivalent*/
-            ;
             -moz-background-size: cover;
-            -o-background-size: /*@@prefixmycss->No equivalent*/
-            ;
             background-size: cover;
             background-position: center center;
             background-attachment: fixed;
@@ -560,10 +251,7 @@
         
         #header .bottom {
             color: white;
-        }
-        
-        #header .center .slogan {
-            font-size: 26px;
+            font-size: 100px;
         }
         
         #header .banner h1 {
@@ -572,15 +260,7 @@
             font-weight: bold;
             display: inline-block;
             background: none;
-            padding: 0px 30px;
-        }
-        
-        #header .subtitle h4 {
-            display: inline-block;
-            background: white;
-            color: #660066;
-            font-size: 38px;
-            padding: 0px 15px;
+            padding: 0px 0px;
         }
         
         #header .bottom {
@@ -609,36 +289,11 @@
             margin-bottom: 0;
         }
         
-        .navbar-brand h2 {
-            margin-top: 0;
-            font-weight: bold;
-            color: white;
-        }
-        
         .navbar-brand {
-            padding-top: 8px;
+            padding-top: 0px;
             padding-bottom: 0;
         }
         /*logo*/
-        
-        .navbar #logo {
-            margin-top: -15px;
-            background: rgba(33, 45, 57, 0.0);
-            background-position: bottom;
-            -webkit-transition: all 0.4s;
-            -moz-transition: all 0.4s;
-            -o-transition: all 0.4s;
-            transition: all 0.4s;
-            color: #fff;
-        }
-        
-        .navbar #logo:hover {
-            background: #660066;
-            -webkit-transition: all 0.4s;
-            -moz-transition: all 0.4s;
-            -o-transition: all 0.4s;
-            transition: all 0.4s;
-        }
         
         .navbar-inverse .navbar-nav>li>a {
             -webkit-transition: all 0.4s;
@@ -649,8 +304,7 @@
             font-weight: bold;
         }
         
-        .navbar-inverse .navbar-nav>li>a:hover,
-        .navbar-inverse .navbar-nav>.active>a {
+        .navbar-inverse .navbar-nav>li>a:hover {
             background: #660066;
             color: white;
             text-shadow: none;
@@ -718,11 +372,7 @@
         
         .parallax {
             background: url(https://tepozspa.xiiber.com/fotos/viajes-gay-tepozspa-02.webp) fixed no-repeat center center;
-            -webkit-background-size: /*@@prefixmycss->No equivalent*/
-            ;
             -moz-background-size: cover;
-            -o-background-size: /*@@prefixmycss->No equivalent*/
-            ;
             background-size: cover;
             position: relative;
             color: #FFF;
@@ -741,17 +391,8 @@
             margin-bottom: 10px !important;
         }
         
-        .facts h4 {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-        
-        .parallax h1,
         .parallax h2,
-        .parallax h3,
-        .parallax h4,
-        .parallax h5,
-        .parallax h6 {
+        .parallax h3 {
             color: #fff;
         }
         
@@ -771,37 +412,6 @@
         /* ==========================================================================
         06. Food menu 
     ========================================================================== */
-        
-        .menu-items {
-            text-align: center;
-            margin: 0 auto;
-        }
-        
-        .menu-titles h1 {
-            text-shadow: none;
-            color: #660066;
-            text-align: center;
-            margin: 0 auto;
-            padding-top: 30px;
-            padding-bottom: 15px;
-        }
-        
-        #food-menu ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        
-        .menu-images img {
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
-            border: 5px solid #dadada;
-            display: block;
-            margin: auto;
-            margin-top: 40px;
-            height: 200px;
-        }
         /* ==========================================================================
         07. Special offers 
     ========================================================================== */
@@ -892,13 +502,6 @@
             margin-top: 10px;
         }
         
-        .pricing .pricing-item .pricing-item-details a.view-link {
-            display: inline-block;
-            margin-top: 7px;
-            font-size: 12px;
-            border-bottom: 1px dotted #aeaeae;
-        }
-        
         .pricing .pricing-item .hot-tag {
             top: 0;
             left: 0;
@@ -914,39 +517,6 @@
         /* ==========================================================================
         08. Abordaje
     ========================================================================== */
-        
-        .form-group {
-            margin-bottom: 24px;
-        }
-        
-        .form-control[disabled],
-        .form-control[readonly],
-        fieldset[disabled] .form-control {
-            cursor: not-allowed;
-            background-color: transparent;
-        }
-        
-        .form-control {
-            height: 38px;
-            font-size: 14px;
-            vertical-align: middle;
-            background-color: transparent;
-            -webkit-border-radius: 2px;
-            -webkit-border-radius: 2px;
-            -moz-border-radius: 2px;
-            border-radius: 2px;
-            -webkit-box-shadow: none !important;
-            -moz-box-shadow: none !important;
-            box-shadow: none !important;
-            -webkit-transition: none !important;
-            -moz-transition: none !important;
-            -o-transition: none !important;
-            transition: none !important;
-        }
-        
-        .form p {
-            margin: 10px 0 30px 0;
-        }
         /* ==========================================================================
         09. Chefs 
     ========================================================================== */
@@ -954,44 +524,6 @@
         .chefs img {
             border: 5px solid #e7e7e7;
             width: 80%;
-        }
-        
-        .button {
-            background-color: #cc00cc;
-            border: none;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-        
-        .button4 {
-            border-radius: 12px;
-        }
-        
-        .alert {
-            padding: 20px;
-            background-color: #cc00cc;
-            color: white;
-        }
-        
-        .closebtn {
-            margin-left: 15px;
-            color: white;
-            font-weight: bold;
-            float: right;
-            font-size: 25px;
-            line-height: 20px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        
-        .closebtn:hover {
-            color: black;
         }
         
         .collapsible {
@@ -1007,7 +539,6 @@
             font-size: 20px;
         }
         
-        .active,
         .collapsible:hover {
             background-color: rgb(173, 76, 173);
         }
@@ -1019,10 +550,6 @@
             float: right;
             margin-left: 5px;
             font-size: 18px;
-        }
-        
-        .active:after {
-            content: "\2212";
         }
         
         .content {
@@ -1045,13 +572,6 @@
             color: white;
         }
         /* Footer xiib morado */
-        
-        .footerxiib {
-            padding: 20px;
-            text-align: center;
-            background: #660066;
-            color: white;
-        }
         
         .dark-wrapper {
             background: #660066;
@@ -1087,439 +607,163 @@
             opacity: 0.5;
             filter: alpha(opacity=50);
         }
-        
-        .themeBy {
-            color: #660066;
-            background: white;
-        }
         /* inicio Scroll Down   */
-        
-        #myBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            font-size: 20px;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 15px;
-            text-align: center;
-        }
-    }
-    #myBtn:hover {
-        background-color: #b300b3;
-    }
-    /* final Scroll Down   */
-    /* ==========================================================================
+        /* final Scroll Down   */
+        /* ==========================================================================
         11. Responsive styles 
     ========================================================================== */
-    @media (max-width: 991px) {
-        .pricing .pricing-item .pricing-item-details {
-            margin-left: 0;
+        
+        @media (max-width: 991px) {
+            .pricing .pricing-item .pricing-item-details {
+                margin-left: 0;
+            }
+            .pricing .pricing-item a img {
+                float: none;
+                margin-bottom: 30px;
+            }
         }
         
-        .pricing .pricing-item a img {
-            float: none;
-            margin-bottom: 30px;
+        @media (min-width:768px) {
+            .navbar-nav {
+                float: none !important;
+                width: 100%;
+                text-align: center;
+                margin-left: 9px;
+            }
+            .navbar-nav>li {
+                display: inline-block;
+                float: none;
+            }
         }
         
-        .menu-titles h1 {
-            font-size: 25px;
+        @media (max-width:767px) {
+            #header .banner h1 {
+                font-size: 30px;
+            }
+            .social-bar {
+                text-align: center;
+                margin-top: 30px;
+            }
         }
-    }
-    @media (min-width:768px) {
-        .navbar-nav {
-            float: none !important;
+        /* inicio Icon Bar   */
+        
+        body {
+            margin: 0;
+        }
+        
+        .icon-bar {
             width: 100%;
-            text-align: center;
-            margin-left: 9px;
+            background-color: #ffffff;
+            overflow: auto;
+        }
+        /* Final Icon Bar  */
+        /* inicio Hoverable Sidenav Buttons  */
+        /* inicio menu2 */
+        
+        body {
+            margin: 0;
         }
         
-        .navbar-nav>li {
+        .btn {
             display: inline-block;
-            float: none;
-        }
-        
-        #logo {
-            position: absolute;
-            display: block !important;
-            width: 110px;
-            left: 50%;
-            margin-left: -55px;
-            background: black;
-            -webkit-border-radius: 0 0 100% 100%;
-            -moz-border-radius: 0 0 100% 100%;
-            border-radius: 0 0 100% 100%;
-            padding: 12px;
-        }
-    }
-    @media (max-width:767px) {
-        #header .banner h1 {
-            font-size: 30px;
-        }
-        
-        #header .subtitle h4 {
-            font-size: 22px;
-        }
-        
-        .social-bar {
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
             text-align: center;
-            margin-top: 30px;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: none;
+            border-radius: 4px
         }
-    }
-    /* inicio Icon Bar   */
-    body {
-        margin: 0;
-    }
-    .icon-bar {
-        width: 100%;
-        background-color: #ffffff;
-        overflow: auto;
-    }
-    .icon-bar a {
-        float: left;
-        width: 20%;
-        text-align: center;
-        padding: 12px 0;
-        transition: all 0.3s ease;
-        color: #bfbfbf;
-        font-size: 36px;
-    }
-    .icon-bar a:hover {
-        background-color: #f2f2f2;
-    }
-}
-
-/* Final Icon Bar  */
-
-/* inicio Hoverable Sidenav Buttons  */
-#mySidenav a {
-    position: absolute;
-    left: -80px;
-    transition: 0.3s;
-    padding: 10px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-    border-radius: 0 5px 5px 0;
-}
-
-/* inicio menu2 */
-
-}
-body {
-    margin:0;
-}
-.icon-bar2 {
-    width: 100%;
-    background-color: #555;
-    overflow: hidden;
-    position: fixed;
-}
-.icon-bar2 a {
-    float: left;
-    display: block;
-    width: 20%;
-    text-align: center;
-    padding: 12px 0;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 36px;
-}
-.icon-bar2 a:hover {
-    background-color: #000;
-}
-.active2 {
-    background-color: #4CAF50;
-}
-.btn {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: none;
-    border-radius: 4px
-}
-.btn.active.focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn:active:focus,
-.btn:focus {
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px
-}
-.btn.focus,
-.btn:focus,
-.btn:hover {
-    color: #333;
-    text-decoration: none
-}
-.btn.active,
-.btn:active {
-    background-image: none;
-    outline: 0;
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
-}
-.btn.disabled,
-.btn[disabled],
-fieldset[disabled] .btn {
-    cursor: not-allowed;
-    filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    opacity: .65
-}
-a.btn.disabled,
-fieldset[disabled] a.btn {
-    pointer-events: none
-}
-.btn-default {
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc
-}
-.btn-default.focus,
-.btn-default:focus {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #8c8c8c
-}
-.btn-default:hover {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad
-}
-.btn-default.active,
-.btn-default:active,
-.open>.dropdown-toggle.btn-default {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad
-}
-.btn-default.active.focus,
-.btn-default.active:focus,
-.btn-default.active:hover,
-.btn-default:active.focus,
-.btn-default:active:focus,
-.btn-default:active:hover,
-.open>.dropdown-toggle.btn-default.focus,
-.open>.dropdown-toggle.btn-default:focus,
-.open>.dropdown-toggle.btn-default:hover {
-    color: #333;
-    background-color: #d4d4d4;
-    border-color: #8c8c8c
-}
-.btn-default.active,
-.btn-default:active,
-.open>.dropdown-toggle.btn-default {
-    background-image: none
-}
-.btn-default.disabled.focus,
-.btn-default.disabled:focus,
-.btn-default.disabled:hover,
-.btn-default[disabled].focus,
-.btn-default[disabled]:focus,
-.btn-default[disabled]:hover,
-fieldset[disabled] .btn-default.focus,
-fieldset[disabled] .btn-default:focus,
-fieldset[disabled] .btn-default:hover {
-    background-color: #fff;
-    border-color: #ccc
-}
-.btn-default .badge {
-    color: #fff;
-    background-color: #333
-}
-.btn-danger {
-    color: #fff;
-    background-color: #660066;
-    border-color: #330033
-}
-.btn-danger.focus,
-.btn-danger:focus {
-    color: #fff;
-    background-color: #993399;
-    border-color: #761c19
-}
-.btn-danger:hover {
-    color: #fff;
-    background-color: #993399;
-    border-color: #ac2925
-}
-.btn-danger.active,
-.btn-danger:active,
-.open>.dropdown-toggle.btn-danger {
-    color: #fff;
-    background-color: #993399;
-    border-color: #ac2925
-}
-.btn-danger.active.focus,
-.btn-danger.active:focus,
-.btn-danger.active:hover,
-.btn-danger:active.focus,
-.btn-danger:active:focus,
-.btn-danger:active:hover,
-.open>.dropdown-toggle.btn-danger.focus,
-.open>.dropdown-toggle.btn-danger:focus,
-.open>.dropdown-toggle.btn-danger:hover {
-    color: #fff;
-    background-color: #ac2925;
-    border-color: #761c19
-}
-.btn-danger.active,
-.btn-danger:active,
-.open>.dropdown-toggle.btn-danger {
-    background-image: none
-}
-.btn-danger.disabled.focus,
-.btn-danger.disabled:focus,
-.btn-danger.disabled:hover,
-.btn-danger[disabled].focus,
-.btn-danger[disabled]:focus,
-.btn-danger[disabled]:hover,
-fieldset[disabled] .btn-danger.focus,
-fieldset[disabled] .btn-danger:focus,
-fieldset[disabled] .btn-danger:hover {
-    background-color: #d9534f;
-    border-color: #d43f3a
-}
-.btn-danger .badge {
-    color: #d9534f;
-    background-color: #fff
-}
-.btn-link {
-    font-weight: 400;
-    color: #337ab7;
-    border-radius: 0
-}
-.btn-link,
-.btn-link.active,
-.btn-link:active,
-.btn-link[disabled],
-fieldset[disabled] .btn-link {
-    background-color: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none
-}
-.btn-link,
-.btn-link:active,
-.btn-link:focus,
-.btn-link:hover {
-    border-color: transparent
-}
-.btn-link:focus,
-.btn-link:hover {
-    color: #23527c;
-    text-decoration: underline;
-    background-color: transparent
-}
-.btn-link[disabled]:focus,
-.btn-link[disabled]:hover,
-fieldset[disabled] .btn-link:focus,
-fieldset[disabled] .btn-link:hover {
-    color: #777;
-    text-decoration: none
-}
-.btn-group-lg>.btn,
-.btn-lg {
-    padding: 10px 16px;
-    font-size: 18px;
-    line-height: 1.3333333;
-    border-radius: 6px
-}
-.btn-group-sm>.btn,
-.btn-sm {
-    padding: 5px 10px;
-    font-size: 12px;
-    line-height: 1.5;
-    border-radius: 3px
-}
-.btn-group-xs>.btn,
-.btn-xs {
-    padding: 1px 5px;
-    font-size: 12px;
-    line-height: 1.5;
-    border-radius: 3px
-}
-.btn-block {
-    display: block;
-    width: 100%
-}
-.btn-block+.btn-block {
-    margin-top: 5px
-}
-input[type=button].btn-block,
-input[type=reset].btn-block,
-input[type=submit].btn-block {
-    width: 100%
-}
-.icontainer {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 100%;
-    /* 16:9 Aspect Ratio */
-}
-.responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-.all-browsers {
-    margin: 0;
-}
-.all-browsers>h1,
-.browser {
-    margin: 0px;
-    padding: 0px;
-}
-.browser {
-    background:;
-}
-.browser>h2,
-p {
-    margin: 4px;
-    font-size: 100%;
-}
-.pulsing-10 {
-    display: grid;
-    font-size: 50px;
-}
-.pulsing-10:before,
-.pulsing-10:after {
-    content:attr(data-c);
-    grid-area: 1/1;
-}
-.pulsing-10:after {
-    animation:pl10 1s infinite;
-}
-@keyframes pl10 {
-    to {
-        transform:scale(1.8);
-        opacity:0
-    }
-}
+        
+        .btn:active:focus,
+        .btn:focus {
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px
+        }
+        
+        .btn:focus,
+        .btn:hover {
+            color: #333;
+            text-decoration: none
+        }
+        
+        .btn:active {
+            background-image: none;
+            outline: 0;
+            -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+            box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+        }
+        
+        .btn-danger {
+            color: #fff;
+            background-color: #660066;
+            border-color: #330033
+        }
+        
+        .btn-danger:focus {
+            color: #fff;
+            background-color: #993399;
+            border-color: #761c19
+        }
+        
+        .btn-danger:hover {
+            color: #fff;
+            background-color: #993399;
+            border-color: #ac2925
+        }
+        
+        .btn-danger:active {
+            color: #fff;
+            background-color: #993399;
+            border-color: #ac2925
+        }
+        
+        .btn-danger:active:focus,
+        .btn-danger:active:hover {
+            color: #fff;
+            background-color: #ac2925;
+            border-color: #761c19
+        }
+        
+        .btn-danger:active {
+            background-image: none
+        }
+        
+        .btn-lg {
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            border-radius: 6px
+        }
+        
+        .all-browsers {
+            margin: 0;
+        }
+        
+        .browser {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .browser {
+            background: none;
+        }
+        
+        p {
+            margin: 4px;
+            font-size: 100%;
+        }
     </style>
 
 
@@ -1556,12 +800,10 @@ p {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="https://www.xiiber.com">
                     <h1>
-                        <i class="icon-logo-xiiber-bus-a-tepozspa " style="font-size:100px; color: white;"><span class="path1 "></span><span class="path2 "></span><span class="path3 "></span><span class="path4 "></span><span class="path5 "></span><span class="path6 "></span><span class="path7
-                            "></span><span class="path8 "></span><span class="path9 "></span><span class="path10 "></span><span class="path11 "></span><span class="path12 "></span></i>
-
-
+                        <i class="icon-logo-xiiber-2021" style="font-size: 30px; padding-top:0px; "><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span></i>
+                    </h1>
                 </a>
             </div>
             <!-- navbar-header -->
@@ -1571,17 +813,13 @@ p {
                     <li><a href="#xiiber">Xiiber Travel</a></li>
                     <li><a href="#abordaje">Abordaje</a></li>
                     <li><a href="#proximos-viajes">Próximos viajes</a></li>
-                    <li>
-                        <a href="#metodo-de-pago">Método de pago</a>
-                    </li>
+                    <li><a href="#metodo-de-pago">Método de pago</a></li>
                     <li><a href="#paquetes">Paquetes</a> </li>
                     <li><a href="#blog">Blog</a></li>
-
                     <!--fix for scroll spy active menu element-->
-                    <li style="display:none;">
+                    <li style="display:none">
                         <a href="#header"></a>
                     </li>
-
                 </ul>
             </div>
             <!--/.navbar-collapse -->
@@ -1595,31 +833,24 @@ p {
         <div class="bg-overlay"></div>
         <div class="center text-center">
             <div itemscope itemtype="https://schema.org/TouristAttraction">
-                <i class="icon-logo-xiiber-bus-a-tepozspa" style="font-size: 450px; color: white; text-shadow:   2px 2px 4px #ffffff;"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span></i>
+                <div class="banner">
+                    <h1>
+                        <span itemprop="name" style="visibility:hidden;">Xiiber Travel</span>
+                        <i class="icon-xiiber-logo-horizontal-color" style="font-size: 90px; padding-top: 100px;  align-content: center;"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span></i>
+                    </h1>
+                </div>
                 <div class="subtitle">
-                    <p style="font-size:14px">te lleva a </p>
+                    <p style="font-size:18px">te lleva a </p>
                 </div>
                 <div class="banner">
-                    <h1><span itemprop="name" style="visibility:hidden;"> Tepozspa</span><br>
-                        <svg class="icon icon-logo-tepozspa-nuevo" style=" color: rgb(252, 252, 252);  font-size: 350px; text-shadow: 2px 2px 4px #ffffff;"><use xlink:href="#icon-logo-tepozspa-nuevo"></use>
-                        <defs>
-                            <symbol id="icon-logo-tepozspa-nuevo" viewBox="0 0 32 32">
-                                <path d="M4.113 17.512v-3.181h2.067v0.375h-1.611v1.002h1.52v0.379h-1.52v1.051h1.611v0.375z"></path>
-                                <path d="M7.064 14.331h1.318c0.337 0 0.598 0.083 0.785 0.249s0.279 0.4 0.279 0.704c0 0.301-0.093 0.535-0.279 0.704s-0.448 0.253-0.785 0.253h-0.853v1.273h-0.465v-3.181zM8.332 15.865c0.445 0 0.668-0.194 0.668-0.582 0-0.385-0.223-0.578-0.668-0.578h-0.803v1.16h0.803z"></path>
-                                <path d="M19.785 17.112h1.787v0.379h-2.315v-0.343l1.738-2.459h-1.738v-0.379h2.27v0.338z"></path>
-                                <path d="M25.405 14.37h1.318c0.337 0 0.598 0.083 0.785 0.249s0.279 0.4 0.279 0.704c0 0.301-0.093 0.535-0.279 0.704s-0.448 0.253-0.785 0.253h-0.853v1.273h-0.465v-3.181zM26.673 15.904c0.445 0 0.668-0.194 0.668-0.582 0-0.385-0.223-0.578-0.668-0.578h-0.803v1.16h0.803z"></path>
-                                <path d="M30.752 17.551l-0.338-0.785h-1.611l-0.338 0.785h-0.469l1.417-3.181h0.388l1.417 3.181h-0.464zM28.961 16.396h1.295l-0.645-1.507-0.649 1.507z"></path>
-                                <path d="M1.857 17.412v-2.793h-1.074v-0.388h2.623v0.388h-1.079v2.793z"></path>
-                                <path d="M23.348 17.467c-0.247 0-0.473-0.033-0.679-0.1s-0.383-0.164-0.531-0.293l0.167-0.343c0.156 0.127 0.318 0.218 0.485 0.273s0.355 0.084 0.562 0.084c0.238 0 0.421-0.045 0.55-0.133s0.194-0.214 0.194-0.377c0-0.139-0.060-0.242-0.18-0.309s-0.313-0.132-0.578-0.192c-0.253-0.054-0.46-0.115-0.623-0.184s-0.289-0.163-0.381-0.282c-0.092-0.119-0.137-0.27-0.137-0.454 0-0.187 0.049-0.35 0.147-0.492s0.237-0.252 0.417-0.332c0.181-0.080 0.39-0.119 0.628-0.119 0.223 0 0.432 0.034 0.629 0.101s0.359 0.165 0.486 0.291l-0.163 0.343c-0.148-0.12-0.298-0.21-0.454-0.269s-0.32-0.088-0.494-0.088c-0.229 0-0.409 0.048-0.539 0.142s-0.196 0.226-0.196 0.395c0 0.144 0.057 0.253 0.171 0.327s0.298 0.141 0.551 0.201c0.265 0.060 0.479 0.123 0.643 0.187s0.295 0.153 0.393 0.266c0.098 0.113 0.147 0.259 0.147 0.44 0 0.183-0.049 0.344-0.147 0.483s-0.238 0.245-0.42 0.321c-0.182 0.075-0.398 0.113-0.648 0.113z"></path>
-                                <path d="M13.919 11.534c2.643-0.25 4.678 1.641 4.946 3.964 0.304 2.625-1.676 4.706-3.974 4.961-2.633 0.29-4.677-1.67-4.948-3.958-0.307-2.597 1.683-4.75 3.976-4.966zM11.37 18.96c0.060 0.145 0.234 0.247 0.417 0.4 0.414 0.342 1.136 0.691 1.682 0.794-0.083-0.214-0.209-0.255-0.338-0.407-0.287-0.338-0.961-0.777-1.388-1-0.108 0.045-0.212 0.131-0.374 0.214zM10.454 17.577c0.223 0.821 0.501 0.574 1.678 1.277 0.388 0.232 0.943 0.651 1.228 0.987 0.055 0.065 0.112 0.12 0.167 0.195 0.076 0.102 0.057 0.137 0.236 0.171-0.185-0.59-1.041-1.416-1.415-1.768-0.455-0.43-0.381-0.288-0.692-0.261-0.43 0.037-0.363-0.042-1.025-0.384l0.121-0.342-0.3 0.126zM13.796 19.979c-0.090-0.337-0.466-0.934-0.639-1.182-0.133-0.19-0.262-0.36-0.394-0.533-0.133-0.174-0.325-0.368-0.407-0.526-0.391 0.021-0.428 0.145-0.733-0.188s0.067-0.323-0.562-0.489c0.080-0.105 0.054-0.045 0.184-0.138 0.071-0.052 0.033-0.017 0.081-0.066l-0.507 0.015c-0.116-0.119-0.269-0.309-0.327-0.493l0.279-0.097c-0.117-0.042-0.332-0.051-0.408-0.090-0.108-0.054-0.126-0.198-0.218-0.302-0.023 1.137 0.094 0.858 0.671 1.262l1.649 1.25c0.243 0.197 0.724 0.734 0.935 0.998 0.159 0.199 0.257 0.395 0.397 0.58zM14.091 19.949c-0.077-1.027-0.62-2.234-0.784-3.013-0.301-0.014-0.286 0.005-0.475-0.137 0.079 0.617-0.132 0.195 0.211 0.781 0.299 0.511 0.526 0.95 0.737 1.518l0.31 0.852zM18.176 17.792c-0.676 0.325-0.535 0.42-0.993 0.385-0.311-0.023-0.307-0.105-0.51 0.073-0.156 0.136-0.233 0.188-0.379 0.347l-0.526 0.521c-0.22 0.226-0.599 0.759-0.724 1.087 0.219-0.044 0.226-0.188 0.381-0.341 0.435-0.432 0.648-0.643 1.219-0.994 0.323-0.199 0.629-0.353 0.978-0.513 0.176-0.080 0.382-0.114 0.481-0.246 0.088-0.117 0.202-0.372 0.243-0.52l-0.274-0.144c0.005 0.182 0.078 0.18 0.103 0.346zM18.052 16.254c0.104 0.096 0.133 0.096 0.267 0.123-0.066 0.202-0.198 0.384-0.335 0.492l-0.454 0.036 0.223 0.113c-0.105 0.107-0.251 0.105-0.397 0.146-0.115 0.459-0.394 0.748-0.857 0.563-0.363 0.374-1.408 1.724-1.553 2.425 0.020-0.109 0.27-0.477 0.344-0.588 0.48-0.723 0.931-1.015 1.493-1.523 0.326-0.294 0.791-0.581 1.163-0.851 0.598-0.434 0.773-0.175 0.719-1.304-0.311 0.36 0.061 0.275-0.613 0.368zM15.337 20.153c0.764-0.16 1.614-0.611 2.106-1.193-0.195-0.111-0.185-0.085-0.345-0.215-0.388 0.121-0.886 0.542-1.195 0.79-0.222 0.178-0.423 0.346-0.566 0.618zM15.514 16.93c-0.27 0.854-0.72 2.1-0.797 3.023 0.090-0.123 0.22-0.619 0.298-0.823 0.184-0.486 0.459-1.063 0.72-1.496 0.4-0.666 0.151-0.246 0.242-0.833-0.242 0.171-0.165 0.121-0.463 0.129zM14.948 16.641c-0.109 1.023-0.4 2.424-0.365 3.438 0.065-0.635 0.448-2.016 0.669-2.685 0.302-0.915 0.059-0.349 0.062-0.931-0.014 0.006-0.352 0.169-0.365 0.178zM14.461 16.473l-0.006 3.497c0.108-0.513 0.144-1.333 0.211-1.914 0.036-0.306 0.076-0.624 0.116-0.923 0.079-0.586 0.108-0.388-0.098-0.861l-0.222 0.202zM14.35 20.224l0.012-3.76c-0.049-0.026-0.088-0.048-0.125-0.074l-0.13-0.092c-0.053 0.194-0.132 0.227-0.143 0.363-0.007 0.090 0.051 0.386 0.066 0.498 0.046 0.333 0.089 0.661 0.126 0.998 0.074 0.681 0.158 1.377 0.194 2.067zM14.225 20.079c0.022-1.079-0.256-2.365-0.363-3.446-0.133-0.061-0.259-0.109-0.36-0.181-0.017 0.219-0.098 0.368-0.101 0.454l0.406 1.318c0.158 0.57 0.341 1.27 0.418 1.855zM10.164 15.538c0.006 0.002 0.017-0.007 0.018-0.001 0.044 0.155-0.041-0.144 0.229 0.124 0.471 0.468 0.893 0.838 1.352 1.346 0.175 0.194 0.364 0.351 0.535 0.55 0.484 0.562 1.412 1.655 1.687 2.594-0.029-0.632-0.913-2.458-1.234-2.84-0.407 0.057-0.564-0.048-0.913-0.567l0.327-0.193-0.515 0.008c-0.050-0.16-0.131-0.179-0.183-0.338l0.377-0.243-0.462 0.001-0.293-0.561 0.247-0.097c-0.324-0.083-0.427-0.033-0.406-0.55 0.021-0.504 0.497-0.164 0.672 0.022 0.233 0.248 0.215 0.313 0.215 0.71 0.087-0.073 0.070-0.096 0.163-0.134 0.060 0.155 0.352 0.535 0.497 0.644l-0.079-0.282c0.050-0.005 0.126-0.006 0.175-0.015l0.163-0.064c-0.62-0.089-0.533-0.048-0.777-1.111 0.117-0.026 0.186-0.026 0.283-0.097-0.148-0.030-0.277-0.038-0.377-0.115-0.194-0.249 0.068-1.13 0.739-0.096 0.394 0.606 0.137 0.399 0.196 0.967l0.176-0.22c0.1 0.152 0.173 0.287 0.257 0.43l0.349-0.081c-0.162-0.056-0.337-0.003-0.424-0.132 0.049-0.151 0.145-0.105 0.305-0.117-0.010-0.010-0.025-0.037-0.031-0.027l-0.124-0.081c-0.023-0.010-0.158-0.043-0.187-0.051l-0.083-0.392c0.003-0.003 0.018-0.017 0.023-0.009l0.235-0.081-0.325-0.073c-0.067-0.323-0.219-1.004 0.062-1.222 0.287 0.025 0.391 0.442 0.507 0.717 0.144 0.338 0.3 0.567 0.367 0.937l0.046-0.146c0.009-0.045 0.013-0.132 0.020-0.186l0.272 0.074c-0.168-0.344-0.279-0.115-0.201-0.691l0.231 0.112c-0.135-0.286-0.274-0.207-0.167-0.647 0.065-0.266 0.103-0.502 0.383-0.511 0.212 0.257 0.247 0.829 0.287 1.244l-0.234 0.281 0.261-0.042c0.035 0.644 0.070 0.529-0.265 0.873l0.301-0.060c0.052-0.409 0.202-0.782 0.358-1.1 0.143-0.289 0.263-0.853 0.588-0.854 0.158 0.159 0.14 0.518 0.125 0.778-0.024 0.428-0.024 0.45-0.406 0.515 0.011 0.006 0.029-0.001 0.036 0.014l0.233 0.078-0.090 0.397-0.251 0.081c-0.071 0.041-0.042 0.021-0.092 0.070 0.185 0.015 0.257-0.046 0.306 0.127-0.089 0.118-0.249 0.080-0.423 0.115l0.341 0.102 0.267-0.446 0.19 0.212c-0.073-0.624-0.024-0.779 0.436-1.258 0.552-0.573 0.662 0.301 0.405 0.439-0.033 0.018-0.048 0.023-0.090 0.036-0.054 0.016-0.151 0.029-0.21 0.040 0.009 0.006 0.025 0.003 0.030 0.017l0.259 0.070c-0.247 1.121-0.171 0.986-0.781 1.126 0.009 0.002 0.026-0.003 0.033 0.013 0.027 0.063 0.242 0.058 0.306 0.065l-0.096 0.288c0.223-0.164 0.352-0.418 0.518-0.633l0.069 0.024c0.132 0.023-0.040 0.073 0.095 0.001-0.065-0.529 0.445-0.983 0.828-0.889 0.077 0.239 0.044 0.447-0.027 0.704l-0.33 0.084 0.253 0.086c-0.042 0.117-0.247 0.51-0.301 0.575l-0.461 0.001 0.182 0.124c0.078 0.043 0.127 0.065 0.199 0.12-0.060 0.152-0.124 0.19-0.185 0.335l-0.5-0.027 0.324 0.202c-0.068 0.113-0.272 0.349-0.352 0.43-0.191 0.192-0.262 0.208-0.589 0.14-0.124 0.314-0.489 0.837-0.663 1.224-0.171 0.38-0.443 0.985-0.506 1.416 0.129-0.129 0.274-0.5 0.37-0.668 0.135-0.236 0.254-0.412 0.406-0.638 0.332-0.494 0.751-0.951 1.148-1.388l1.307-1.311c0.108-0.097 0.173-0.149 0.266-0.258 0.113-0.13 0.171-0.108 0.274-0.182-0.252-1.574-1.122-2.782-2.552-3.42-1.791-0.798-3.975-0.121-5.053 1.302-0.133 0.175-0.265 0.376-0.392 0.613-0.248 0.465-0.401 0.948-0.48 1.545z"></path>
-                            </symbol>            
-                        </defs>
-                        </svg> </h1>
+                    <h1><span itemprop="name" style="visibility:hidden;"> Tepozspa </span><br>
+                        <i class="icon-logo-tepozspa-2021"></i> </h1>
                     <br><br><br><br><br><br><br><br>
+                    <a href="#xiiber"><i class="icon-arrow-circle-abajo" style="font-size: 100px; color: whitesmoke;"></i></a>
                 </div>
             </div>
             <div class="bottom text-center">
-                <a href="#inicio"><i class="fa fa-chevron-down"></i></a>
+                <a href="#xiiber"><i class="icon-arrow-circle-abajo" ></i></a>
             </div>
         </div>
     </div>
@@ -1630,18 +861,18 @@ p {
         <div id="xiiber" class="light-wrapper">
             <section class="ss-style-top"></section>
             <div class="container inner">
-                <i class="icon-xiiber-hover" style="">
+                <i class="icon-xiiber-hover" style="font-size: 30px;">
                 </i>
                 <h2 style=" visibility: hidden;">
                     <span itemprop="name">xiiber </span>
                 </h2>
-                <p class="lead main text-center"><span itemprop="description"> Agencia de viajes gay en México</span></p>
+                <p class="lead main text-center"><span itemprop="description"> Agencia de viajes gay en México </span></p>
                 <img itemprop="image" style="display:none;visibility:hidden" src="https://tepozspa.xiiber.com/fotos/LocalBusiness" alt="Xiiber" />
                 <div class="row text-center story">
                     <div class="col-sm-4">
                         <div class="col-wrapper">
                             <div class="icon-wrapper"> <i class="icon-reserva-en-lina"></i> </div>
-                            <h3>Reserva</h3>
+                            <h1>Reserva</h1>
                             <p>Con anticipación</p>
                         </div>
                     </div>
@@ -1655,7 +886,7 @@ p {
                                     "></span><span class="path17 "></span><span class="path18 "></span><span class="path19 "></span><span class="path20 "></span><span class="path21 "></span><span class="path22 "></span><span class="path23 "></span><span class="path24 "></span><span class="path25
                                     "></span><span class="path26 "></span></i>
                             </div>
-                            <h3>Actividades</h3>
+                            <h1>Actividades</h1>
                             <p>Durante el bus y regalos en las rifas</p>
                         </div>
                     </div>
@@ -1663,7 +894,7 @@ p {
                         <div class="col-wrapper">
                             <div class="icon-wrapper">
                                 <i class="icon-avatar-hombres-gay-icon-sombras-siluetas "><span class="path1 "></span><span class="path2 "></span><span class="path3 "></span><span class="path4 "></span><span class="path5 "></span></i> </div>
-                            <h3>Exclusivo</h3>
+                            <h1>Exclusivo</h1>
                             <p>Para hombres gay </p>
                         </div>
                     </div>
@@ -1779,7 +1010,7 @@ p {
                                 <td>
                                     <p> Nombre receptor <i class="fa fa-clone " onclick="myFunctionz() "></i></p>
                                 </td>
-                                <td> <input type="text " value="Luis Angel Maciel Padilla " id="myInput2 "></td>
+                                <td> <input type="text " value="Luis Angel Maciel Padilla " id="myInput2 " style="font-size: 14px;"></td>
 
                             </tr>
                             <tr>
@@ -1908,7 +1139,7 @@ p {
 
                     <div class="pricing-item ">
 
-                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, vestidor " title="Tepozspa, vestidor " width="100% " height="auto "></a>
+                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, vestidor " title="Tepozspa, vestidor " width="360px " height="270px "></a>
 
                         <div class="pricing-item-details ">
                             <div>
@@ -1929,7 +1160,7 @@ p {
 
                     <div class="pricing-item ">
 
-                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, locker " title="Tepozspa, locker " width="100% " height="auto "></a>
+                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, locker " title="Tepozspa, locker " width="360px " height="270px "></a>
 
                         <div class="pricing-item-details ">
 
@@ -1952,7 +1183,7 @@ p {
 
                     <div class="pricing-item ">
 
-                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, campamento " title="Tepozspa, campamento " width="100% " height="auto "> </a>
+                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, campamento " title="Tepozspa, campamento " width="360px " height="270px "> </a>
 
                         <div class="pricing-item-details ">
 
@@ -1975,7 +1206,7 @@ p {
 
                     <div class="pricing-item ">
 
-                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, transpsorte " title="Tepozspa, transporte " width="100% " height="auto "></a>
+                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, transpsorte " title="Tepozspa, transporte " width="360px " height="270px "></a>
 
                         <div class="pricing-item-details ">
 
@@ -2117,7 +1348,7 @@ p {
                         <div class="col-sm-4 ">
                             <div class="col-wrapper ">
                                 <div class="icon-wrapper ">
-                                    <img src="fotos/viajes-gay-tepozspa.webp " title="¿Y si viajo solo? " width="300 " height="327 " alt="Viajes gay en pareja Tepozspa ">
+                                    <img src="fotos/viajes-gay-tepozspa.webp " title="¿Y si viajo solo? " width="640px " height="640px" alt="Viajes gay en pareja Tepozspa ">
                                 </div>
                                 <h3>¿Puedo viajar solo?</h3>
                                 <p>Si, puedes viajar solo, muchos pasajeros lo recomiendan</p>
@@ -2137,20 +1368,10 @@ p {
                                 <h3>Siguenos en Twitter</h3>
                                 <p>Fotos y videos sin censura</p>
                                 <div class=" col-lg-12 col-md-12 ">
-                                    <!-- Twitter follow -->
+                                    <!-- 🢂 🢂 🢂 🢂 🢂 🢂 🢂 🢂 🢂 🢂 🢂 🢂 🢂  Twitter follow -->
                                     <div class="w3-container w3-center ">
                                         <a href="https://twitter.com/aTepozspa " class="twitter-follow-button data-show-count " data-show-count="false " data-size="large " data-dnt="false "> @XiiberTravel</a>
-                                        <script>
-                                            ! function(d, s, id) {
-                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                if (!d.getElementById(id)) {
-                                                    js = d.createElement(s);
-                                                    js.id = id;
-                                                    js.src = "https://platform.twitter.com/widgets.js ";
-                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                }
-                                            }(document, "script ", "twitter-wjs ");
-                                        </script>
+
                                     </div>
                                 </div>
                                 <br>
@@ -2202,7 +1423,7 @@ p {
             <div class="container inner ">
                 <div class="social-bar ">
                     <div class="bottom text-center ">
-                        <i class="fa fa-chevron-up " id="inicio " title="Sube "></i>
+                        <i class="icon-arrow-circle-arriba " id="header " title="Sube "></i>
                     </div>
                     <p style="font-size:18px; color:white; ">
                         <a href="https://www.tripadvisor.com.mx/Attraction_Review-g150800-d21347352-Reviews-Xiiber-Mexico_City_Central_Mexico_and_Gulf_Coast.html " target="_blank " class="fa fa-tripadvisor tooltipped " title="Calificación de 5 en Tripadvisor
@@ -2322,7 +1543,7 @@ p {
                 <div class="modal-content ">
                     <div class="modal-body ">
                         <button type="button " class="close " data-dismiss="modal " aria-hidden="true ">&times;</button>
-                        <iframe src="http://www.xiiber.com/secciones.html " " name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; ">
+                        <iframe src="https://www.xiiber.com/secciones.html " " name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; ">
         </iframe>
     </div>
     </div>
@@ -2407,14 +1628,5 @@ p {
         });
     </script>
 
-</body>
-
-</html>
-
-</html>
-
-</html>
-
-</html>
-</html>
+    </body>
 </html>
