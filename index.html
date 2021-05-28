@@ -118,7 +118,7 @@
 
     <!-- Complementos -->
 
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
+
     <link href="css/xiibicon.css" rel="stylesheet ">
 
 
@@ -831,7 +831,6 @@
         td {
             padding: 0
         }
-        /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
         
         @media print {
             *,
@@ -1566,25 +1565,27 @@
         <div class="bg-overlay"></div>
         <div class="center text-center">
             <div itemscope itemtype="https://schema.org/TouristAttraction">
+                <br><br><br><br>
                 <div class="banner">
                     <h1>
-                        <span itemprop="name" style="visibility:hidden;">Xiiber Travel</span>
-                        <i class="icon-xiiber-logo-horizontal-color" style="font-size: 90px; padding-top: 100px;  align-content: center;"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span></i>
+                        <span itemprop="name" style="visibility:hidden;"> Tepozspa </span><br>
+                        <i class="icon-xiiber-logo-horizontal-color" style="font-size: 40px; color: whitesmoke;"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span></i>
                     </h1>
+                    <br><br>
                 </div>
                 <div class="subtitle">
                     <p style="font-size:18px">te lleva a </p>
                 </div>
                 <div class="banner">
-                    <h1><span itemprop="name" style="visibility:hidden;"> Tepozspa </span><br>
-                        <i class="icon-logo-tepozspa-2021"></i> </h1>
-                    <br><br><br><br><br><br><br><br>
-                    <a href="#xiiber"><i class="icon-arrow-circle-abajo" style="font-size: 100px; color: whitesmoke;"></i></a>
+                    <h1>
+                        <span itemprop="name" style="visibility:hidden;"> Tepozspa </span><br>
+                        <i class="icon-logo-tepozspa-2021"></i>
+                    </h1>
+                    <br><br><br><br>
+                    <a href="#xiiber"><i class="icon-arrow-circle-abajo" style="font-size: 35px; color: whitesmoke;"></i></a><br><br><br><br><br><br>
                 </div>
             </div>
-            <div class="bottom text-center">
-                <a href="#xiiber"><i class="icon-arrow-circle-abajo" ></i></a>
-            </div>
+
         </div>
     </div>
     <!-- /#header -->
@@ -1728,95 +1729,8 @@
                 <p class="lead main text-center "></p>
 
                 <button class="collapsible "><div><meta itemprop="paymentAccepted " content="Cash, Credit Card "/>Banco Azteca</div></button>
-                <div class="content ">
-                    <p><br>
-                        <table style="font-size: 14px;">
-                            <tr>
-                                <td>
-                                    <p> Banco receptor </p>
-                                </td>
-                                <td>
-                                    <p> <b>Banco Azteca </b></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p> Nombre receptor <i class="fa fa-clone " onclick="myFunctionz() "></i></p>
-                                </td>
-                                <td> <input type="text " value="Luis Angel Maciel Padilla " id="myInput2 " style="font-size: 14px;"></td>
 
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p> CLABE Interbancaria <i class="fa fa-clone " onclick="myFunction() "></i> </p>
-                                </td>
-                                <td> <input type="text " value="1271 8001 3324 6288 22 " id="myInput1 "></td>
-
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p> Tarjeta de débito <i class="fa fa-clone " onclick="tarjetadebito() "></i> </p>
-                                </td>
-                                <td> <input type="text " value="4027 6657 4930 1926 " id="debito " style="font-size: 12px;"></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p> Número de cuenta <i class="fa fa-clone " onclick="numcuenta() "></i></p>
-                                </td>
-                                <td> <input type="text " value="2545 1332 4628 82 " id="cuenta "></td>
-                            </tr>
-                        </table>
-                        <script>
-                            function numcuenta() {
-                                var copyText = document.getElementById("cuenta ");
-                                copyText.select();
-                                copyText.setSelectionRange(0, 99999)
-                                document.execCommand("copy ");
-                                alert("Número de cuenta copiada " + copyText.value);
-                            }
-                        </script>
-                        <script>
-                            function tarjetadebito() {
-                                var copyText = document.getElementById("debito ");
-                                copyText.select();
-                                copyText.setSelectionRange(0, 99999)
-                                document.execCommand("copy ");
-                                alert("Tarjeta de débito copiada " + copyText.value);
-                            }
-                        </script>
-                        <script>
-                            function myFunction() {
-                                var copyText = document.getElementById("myInput1 ");
-                                copyText.select();
-                                copyText.setSelectionRange(0, 99999)
-                                document.execCommand("copy ");
-                                alert("Copiada la CLABE " + copyText.value);
-                            }
-                        </script>
-                        <script>
-                            function myFunctionz() {
-                                var copyText = document.getElementById("myInput2 ");
-                                copyText.select();
-                                copyText.setSelectionRange(0, 99999)
-                                document.execCommand("copy ");
-                                alert("Copiado el nombre receptor " + copyText.value);
-                            }
-                        </script>
-
-
-                        <i class="fa fa-exclamation-circle " style="color:red "> En referencia anota tu numero de celular y nombre </i><br><br>
-                </div>
                 <button class="collapsible "><div><meta itemprop="paymentAccepted " content="Cash, Credit Card "/>Banca por internet</div></button>
-                <div class="content ">
-                    <br>
-                    <p><b>CLABE Interbancaria:</b> 1271 8001 3324 6288 22<br>
-                        <p><b>Banco receptor</b> Banco Azteca<br>
-                            <p>Nombre receptor<b></b> Luis Maciel<br>
-                                <b style="color:#000066; ">Visa, Mastercard, American</b><br>
-                                <p>Solicita tu número de referencia personalizado por whatsapp, solo indicanos cual será la tarjeta que utilizaras para poder generar el enlace y completes el pago, solo tienes 72 horas o de lo contrario tendrás que generar
-                                    otro.
-                                    <br>
-                </div>
 
 
             </div>
@@ -1876,7 +1790,7 @@
 
                     <div class="pricing-item ">
 
-                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, locker " title="Tepozspa, locker " width="360px " height="270px "></a>
+                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, locker " title="Tepozspa, locker " width="254px " height="290px "></a>
 
                         <div class="pricing-item-details ">
 
@@ -1899,7 +1813,7 @@
 
                     <div class="pricing-item ">
 
-                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, campamento " title="Tepozspa, campamento " width="360px " height="270px "> </a>
+                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, campamento " title="Tepozspa, campamento " width="254px " height="360px "> </a>
 
                         <div class="pricing-item-details ">
 
@@ -1922,7 +1836,7 @@
 
                     <div class="pricing-item ">
 
-                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, transpsorte " title="Tepozspa, transporte " width="360px " height="270px "></a>
+                        <a href="# "><img class="img-responsive img-thumbnail " src="https://tepozspa.xiiber.com/fotos/tepozspa-alberca.webp " alt="Tepozspa, transpsorte " title="Tepozspa, transporte " width="254px " height="360px "></a>
 
                         <div class="pricing-item-details ">
 
@@ -1953,7 +1867,7 @@
         <section class="ss-style-top "></section>
         <div class="container inner ">
 
-            <h2 class="section-title text-center "> <i class="icon-alerta-del-bus"></i> Abordaje</h2>
+            <h2 class="section-title text-center "> Abordaje</h2>
             <p class="lead main text-center ">Ubicación horarios y mecanica</p>
 
 
@@ -1972,78 +1886,78 @@
                         <span itemprop="name " style="display:none;visibility:hidden ">Viaje a Tepozspa</span>
                         <span itemprop="startDate " content="2021-08-21T08:30 "></span>
 
-                        <h3><span itemprop="about ">Horarios</span></eh3>
+                        <h3><span itemprop="about ">  <i class="icon-alerta-del-bus"></i> Horarios</span></eh3>
 
-                            <h4><span> <i class="icon-location_pin"></i> </span> CDMX</h4>
+                            <h4><span>  CDMX</h4>
                             <p>Puedes abordar el bus desde las 8:30am. <br> Salimos a las 9:00 AM en punto </p>
                             <h4>Tepozspa</h4>
                             <p>Puedes abordar el bus desde las 8:00pm. <br>Salimos a las
                                 <div class="event-time "> 8:30 PM </div> en punto</p>
 
                             <div class="event-venue ">
-                                <h3><i class="fa fa-map-marker fa-fw "></i> <span itemprop="location ">Punto de reunión CDMX</span></h3>
-                                <p>En la primera gasolinera que esta saliendo del metro General Anaya, dirección Taxqueña, siguiendo el sentido de los carros
-                                    <br>
-                                    <br>
-                                    <div class="address ">Heroes del 47 13, San Diego Churubusco, Coyoacán, 04120 Ciudad de México, CDMX</div>
-                                </p>
-                            </div>
-
+                                <h3> <i class="icon-location_pin"></i> <span itemprop="location ">Punto de reunión CDMX</span></h3>
+                        <p>En la primera gasolinera que esta saliendo del metro General Anaya, dirección Taxqueña, siguiendo el sentido de los carros
+                            <br>
+                            <br>
+                            <div class="address ">Heroes del 47 13, San Diego Churubusco, Coyoacán, 04120 Ciudad de México, CDMX</div>
+                        </p>
                     </div>
 
                 </div>
-                <!-- col-md-6 -->
+
             </div>
-            <!-- /.services -->
-            <br>
-            <br>
-
-            <article class="all-browsers ">
-                <article class="browser ">
-
-
-                    <p class="lead main text-center ">Mecánica</p>
-
-                    <br>
-                    <p style="font-size:18px; color:purple; "><b>Paso 1.</b> </p>
-                    <p> Selecciona la fecha del viaje al que quieres asistir</p>
-
-                    <p style="font-size:18px; color:purple; "><b>Paso 2.</b> </p>
-                    <p>Completa el forumulario de reservación</p>
-
-                    <p style="font-size:18px; color:purple; "><b>Paso 3.</b> </p>
-                    <p>Envia tu comprobante por concepto de apartado</p>
-
-                    <p style="font-size:18px; color:purple; "><b>Paso 4.</b> </p>
-                    <p>El día del viaje puedes abordar el bus desde las 8:30am, salimos en punto de las 9am</p>
-                    <br>
-                    <p> El acceso al spa, será conforme fueron llegando al bus. Es muy importante que pases lista en cuanto llegues al punto de reunión. El organizador estará frente a la entrada del bus, quien te hará entregará de tú boleto para el acceso
-                        a spa, además de ser tu número para participar en las rifas de trayecto de ida y/o regreso. ¡Cuida tu boleto! </p><br>
-                    <p> Puedes elegir el lugar que tú prefieras en el autobús.</p>
-
-                    <p style="font-size:18px; color:purple; "><b>Paso 5.</b> </p>
-                    <p> Disfruta del viaje y gracias por cuidar las instalaciones del autobús. De camino sí algun pasajero cumpleaños le entregamos un pastel de parte de Xiiber. Al finalizar el recorrido encontrarás una bolsa para tirar tu basura.
-                        <br> Generalmente por la distancia no se recomienda el uso del servicio sanitario, pero sí lo llegases a requerir, puedes solicitar la llave al organizador. </p>
-
-                    <p style="font-size:18px; color:purple; "><b>Paso 6.</b> </p>
-                    <p>Estando en el Tepozspa, solicitamos de tu apoyo para formarse en dos filas. Una correspondiente a los números que corresponden al acceso con locker y otra fila con las letras, correspondientes al acceso con vestidor. Por instrucciones
-                        del spa, los primeros en acceder serán las letras/vestidores.</p><br>
-                    <p>Nota importante, por seguridad de todos, se hará una revisión general. En caso de que lleves bebidas, alimentos y/o dulces, puedes dejarlos en el bus, consumirlos antes o solicitar que te los guarden y a la salida puedes recogerlos.
-                    </p>
-
-                    <p style="font-size:18px; color:purple; "><b>Paso 7.</b> </p>
-                    <p>Preven tus tiempos para vestirte y hacer el pago correspondiente de tu cuenta para abordar a tiempo. Puedes subir al bus desde las 8:00pm y salimos a las 8:30pm en punto.
-                        <br>Haremos una parada de 20 a 30 minutos aproximadamente en la tiendita ubicada en la Glorieta del Tepozteco, a un costado de la gasolinera. </p>
-
-                    <p style="font-size:18px; color:purple; "><b>Paso 8.</b> </p>
-                    <p> Durante el recorrido, haremos una rifa, te invitamos a participar. Agradecemos cuides de las instalaciones del bus. Al finalizar el recorrido encontrarás una bolsa para tirar tu basura.
-                        <br>El tiempo estimado de llegada a la CDMX, es a las 11:00pm. Descendemos frente al Metro General Anaya, dirección centro. <br></p>
-                    <br>
-                    <b>Muchas gracias tu confianza y esperamos vernos nuevamente en otro viaje a Tepoz o quizás alguno más largo como <strong>Acapulco o Puerto Vallarta</strong>.</b>
-                </article>
-            </article>
+            <!-- col-md-6 -->
         </div>
-        <!-- /.container -->
+        <!-- /.services -->
+        <br>
+        <br>
+
+        <article class="all-browsers ">
+            <article class="browser ">
+
+
+                <p class="lead main text-center ">Mecánica</p>
+
+                <br>
+                <p style="font-size:18px; color:purple; "><b>Paso 1.</b> </p>
+                <p> Selecciona la fecha del viaje al que quieres asistir</p>
+
+                <p style="font-size:18px; color:purple; "><b>Paso 2.</b> </p>
+                <p>Completa el forumulario de reservación</p>
+
+                <p style="font-size:18px; color:purple; "><b>Paso 3.</b> </p>
+                <p>Envia tu comprobante por concepto de apartado</p>
+
+                <p style="font-size:18px; color:purple; "><b>Paso 4.</b> </p>
+                <p>El día del viaje puedes abordar el bus desde las 8:30am, salimos en punto de las 9am</p>
+                <br>
+                <p> El acceso al spa, será conforme fueron llegando al bus. Es muy importante que pases lista en cuanto llegues al punto de reunión. El organizador estará frente a la entrada del bus, quien te hará entregará de tú boleto para el acceso a spa,
+                    además de ser tu número para participar en las rifas de trayecto de ida y/o regreso. ¡Cuida tu boleto! </p><br>
+                <p> Puedes elegir el lugar que tú prefieras en el autobús.</p>
+
+                <p style="font-size:18px; color:purple; "><b>Paso 5.</b> </p>
+                <p> Disfruta del viaje y gracias por cuidar las instalaciones del autobús. De camino sí algun pasajero cumpleaños le entregamos un pastel de parte de Xiiber. Al finalizar el recorrido encontrarás una bolsa para tirar tu basura.
+                    <br> Generalmente por la distancia no se recomienda el uso del servicio sanitario, pero sí lo llegases a requerir, puedes solicitar la llave al organizador. </p>
+
+                <p style="font-size:18px; color:purple; "><b>Paso 6.</b> </p>
+                <p>Estando en el Tepozspa, solicitamos de tu apoyo para formarse en dos filas. Una correspondiente a los números que corresponden al acceso con locker y otra fila con las letras, correspondientes al acceso con vestidor. Por instrucciones
+                    del spa, los primeros en acceder serán las letras/vestidores.</p><br>
+                <p>Nota importante, por seguridad de todos, se hará una revisión general. En caso de que lleves bebidas, alimentos y/o dulces, puedes dejarlos en el bus, consumirlos antes o solicitar que te los guarden y a la salida puedes recogerlos.
+                </p>
+
+                <p style="font-size:18px; color:purple; "><b>Paso 7.</b> </p>
+                <p>Preven tus tiempos para vestirte y hacer el pago correspondiente de tu cuenta para abordar a tiempo. Puedes subir al bus desde las 8:00pm y salimos a las 8:30pm en punto.
+                    <br>Haremos una parada de 20 a 30 minutos aproximadamente en la tiendita ubicada en la Glorieta del Tepozteco, a un costado de la gasolinera. </p>
+
+                <p style="font-size:18px; color:purple; "><b>Paso 8.</b> </p>
+                <p> Durante el recorrido, haremos una rifa, te invitamos a participar. Agradecemos cuides de las instalaciones del bus. Al finalizar el recorrido encontrarás una bolsa para tirar tu basura.
+                    <br>El tiempo estimado de llegada a la CDMX, es a las 11:00pm. Descendemos frente al Metro General Anaya, dirección centro. <br></p>
+                <br>
+                <b>Muchas gracias tu confianza y esperamos vernos nuevamente en otro viaje a Tepoz o quizás alguno más largo como <strong>Acapulco o Puerto Vallarta</strong>.</b>
+            </article>
+        </article>
+    </div>
+    <!-- /.container -->
 
 
 
@@ -2137,19 +2051,27 @@
             <div class="container inner ">
                 <div class="social-bar ">
 
-                    <p style="font-size: 30px; color:white; ">
-                        <a href="https://www.tripadvisor.com.mx/Attraction_Review-g150800-d21347352-Reviews-Xiiber-Mexico_City_Central_Mexico_and_Gulf_Coast.html " target="_blank " class="fa fa-tripadvisor tooltipped " title="Calificación de 5 en Tripadvisor
-                            para Xiiber " rel="noopener></a>
-                        <h4> <b>CG Travel</b> ahora es <b><span itemprop=" name " style="font-family: 'Montserrat Alternates', sans-serif; font-size: 20px; color:white; text-align: center; " >Xiiber</span></b> </h4>
-                        <p><b><em><span itemprop="description ">Xiib</em></b> Proviene de la lengua maya, significa hombre.</span>
-                        </p>
-                        </p> <br>
-                        <i class="icon-facebook "></i>
-                        <a href="https://www.instagram.com/xiibertravel/ " target="_blank " rel="noopener "  title="Siguenos en Instagram "></a>
-                        <a href="https://www.youtube.com/channel/UC4kslfW6LE-g2Rs33G9jlXQ/?guided_help_flow=5 " target="_blank " class="fa fa-youtube-square tooltipped " title="Suscribete y dale me gusta " rel="noopener "></a>
-                        <a href=" https://www.google.com.mx/maps/place/Xiiber/@19.350687,-99.1486379,17z/data=!4m12!1m6!3m5!1s0x85d1fdea83072205:0x762481276f0ce59d!2sXiiber!8m2!3d19.3507606!4d-99.1464759!3m4!1s0x85d1fdea83072205:0x762481276f0ce59d!8m2!3d19.3507606!4d-99.1464759?hl=es "
-                            target="_blank " class="fa fa-google tooltipped " title="Calificación de 5 en Google My Business para Xiiber " rel="noopener "></a>
-                        <h5> Hecho con ❤️ de ida y vuelta para ti</h5>
+
+                    <h1 style=" font-size: 20px;>
+                            <b>CG Travel</b> ahora es
+
+                            <span itemprop=" name " style="font-family: 'Montserrat Alternates', sans-serif; font-size: 20px; color:white; text-align: center; ">
+                            Xiiber
+                            </span>
+
+
+                            <em>
+                            <span itemprop="description ">Xiib Proviene de la lengua maya, significa hombre.</span>
+                            </em>
+
+                    </h1>
+                            <br>
+                            <i class="icon-facebook "></i>
+                            <a href="https://www.instagram.com/xiibertravel/ " target="_blank " rel="noopener " title="Siguenos en Instagram "></a>
+                            <a href="https://www.youtube.com/channel/UC4kslfW6LE-g2Rs33G9jlXQ/?guided_help_flow=5 " target="_blank " class="fa fa-youtube-square tooltipped " title="Suscribete y dale me gusta " rel="noopener "></a>
+                            <a href=" https://www.google.com.mx/maps/place/Xiiber/@19.350687,-99.1486379,17z/data=!4m12!1m6!3m5!1s0x85d1fdea83072205:0x762481276f0ce59d!2sXiiber!8m2!3d19.3507606!4d-99.1464759!3m4!1s0x85d1fdea83072205:0x762481276f0ce59d!8m2!3d19.3507606!4d-99.1464759?hl=es "
+                                target="_blank " class="fa fa-google tooltipped " title="Calificación de 5 en Google My Business para Xiiber " rel="noopener "></a>
+                            <h2 style="font-size: 15px;> Hecho con ❤️ de ida y vuelta para ti</h2>
 
                         <!-- Twitter follow -->
 
@@ -2166,10 +2088,10 @@
                             }(document, "script ", "twitter-wjs ");
                         </script>
                         <br>
-                        <i class="icon-arrow-circle-arriba "  title="Sube " style="font-size: 60px; padding: bottom 30px; " ></i><br><br><br><br>        
+                        <i class="icon-arrow-circle-arriba " title="Sube " style="font-size: 60px; padding: bottom 30px; "></i><br><br><br><br>
                 </div>
-            </div>    
-        </div>            
+            </div>
+        </div>
     </footer>
 
 
@@ -2179,66 +2101,67 @@
         <br> Copyright © 2012-2021 <b>Xiiber Travel</b> </b>
         <br>
         <p style="font-size: 12px; ">
-        Las marcas y logotipos mostrados en este sitio web son únicamente informativos y los derechos corresponden a sus respectivos dueños.
+            Las marcas y logotipos mostrados en este sitio web son únicamente informativos y los derechos corresponden a sus respectivos dueños.
         </p>
 
-       
+
 
     </div>
 
-    
-        <script>
-            script.js(function($, sr) {
-                // debouncing function from Luis Angel MacPad
-                // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
-                var debounce = function(func, threshold, execAsap) {
-                        var timeout;
-                        return function debounced() {
-                            var obj = this,
-                                args = arguments;
 
-                            function delayed() {
-                                if (!execAsap)
-                                    func.apply(obj, args);
-                                timeout = null;
-                            };
-                            if (timeout)
-                                clearTimeout(timeout);
-                            else if (execAsap)
+    <script>
+        script.js(function($, sr) {
+            // debouncing function from Luis Angel MacPad
+            // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+            var debounce = function(func, threshold, execAsap) {
+                    var timeout;
+                    return function debounced() {
+                        var obj = this,
+                            args = arguments;
+
+                        function delayed() {
+                            if (!execAsap)
                                 func.apply(obj, args);
-                            timeout = setTimeout(delayed, threshold || 100);
+                            timeout = null;
                         };
+                        if (timeout)
+                            clearTimeout(timeout);
+                        else if (execAsap)
+                            func.apply(obj, args);
+                        timeout = setTimeout(delayed, threshold || 100);
+                    };
+                }
+                // smartresize 
+            jQuery.fn[sr] = function(fn) {
+                return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
+            };
+        })(jQuery, 'smartresize');
+
+
+        $(document).ready(function() {
+                    ///////////////////////////////
+                    // Set Home Slideshow Height
+                    ///////////////////////////////
+                    function setHomeBannerHeight() {
+                        var windowHeight = jQuery(window).height();
+                        jQuery('#header').height(windowHeight);
                     }
-                    // smartresize 
-                jQuery.fn[sr] = function(fn) {
-                    return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
-                };
-            })(jQuery, 'smartresize');
+                    ///////////////////////////////
+                    // Center Home Slideshow Text
+                    ///////////////////////////////
+                    function centerHomeBannerText() {
+                        var bannerText = jQuery('#header > .center');
+                        var bannerTextTop = (jQuery('#header').actual('height') / 2) - (jQuery('#header > .center').actual('height') / 2) - 20;
+                        bannerText.css('padding-top', bannerTextTop + 'px');
+                        bannerText.show();
+                    }
+                    setHomeBannerHeight();
+                    centerHomeBannerText();
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
 
-
-            $(document).ready(function() {
-                        ///////////////////////////////
-                        // Set Home Slideshow Height
-                        ///////////////////////////////
-                        function setHomeBannerHeight() {
-                            var windowHeight = jQuery(window).height();
-                            jQuery('#header').height(windowHeight);
-                        }
-                        ///////////////////////////////
-                        // Center Home Slideshow Text
-                        ///////////////////////////////
-                        function centerHomeBannerText() {
-                            var bannerText = jQuery('#header > .center');
-                            var bannerTextTop = (jQuery('#header').actual('height') / 2) - (jQuery('#header > .center').actual('height') / 2) - 20;
-                            bannerText.css('padding-top', bannerTextTop + 'px');
-                            bannerText.show();
-                        }
-                        setHomeBannerHeight();
-                        centerHomeBannerText();
-        </script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
-        
 
 </body>
+
 </html>
