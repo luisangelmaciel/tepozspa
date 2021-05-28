@@ -1,0 +1,33 @@
+[{
+    "path": "https://tepozspa.xiiber.com/budget.json",
+    "timings": [{
+            "metric": "total",
+            "budget": 14
+        },
+        {
+            "metric": "image",
+            "budget": 9
+        },
+        {
+            "metric": "font",
+            "budget": 3
+        },
+        {
+            "metric": "Document",
+            "budget": 1
+        }
+    ],
+    "resourceSizes": [{
+            "resourceType": "script",
+            "budget": 2
+        },
+        {
+            "resourceType": "Stylesheet",
+            "budget": 3
+        }
+    ],
+    "resourceCounts": [{
+        "resourceType": "third-party",
+        "budget": 1
+    }]
+}]
