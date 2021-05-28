@@ -10,7 +10,7 @@
         },
         {
             "metric": "font",
-            "budget": 3
+            "budget": 1
         },
         {
             "metric": "Document",
@@ -23,7 +23,7 @@
         },
         {
             "resourceType": "Stylesheet",
-            "budget": 3
+            "budget": 1
         }
     ],
     "resourceCounts": [{
