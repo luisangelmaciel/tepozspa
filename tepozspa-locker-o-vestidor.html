@@ -31,6 +31,7 @@
             color: #102770;
             background-color: #ffeba7;
             overflow-x: hidden;
+            min-height: 100vh;
         }
         
         a {
@@ -66,7 +67,7 @@
         }
         
         .full-height {
-            min-height: 100vh;
+            min-height: 10vh;
         }
         
         [type="checkbox"]:checked,
@@ -92,7 +93,7 @@
             font-size: 14px;
             letter-spacing: 1px;
             line-height: 44px;
-            padding: 0 25px;
+            padding: 0 10px;
             padding-right: 27px;
             overflow: hidden;
             color: #fff;
@@ -144,7 +145,7 @@
             -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
             perspective: 1000px;
-            margin-top: 90px;
+            margin-top: 25px;
         }
         
         .card-3d-wrapper {
@@ -187,7 +188,7 @@
         
         .pricing-wrap {
             position: relative;
-            padding-top: 160px;
+            padding-top: 30px;
             width: 100%;
             display: block;
             z-index: 1;
@@ -266,7 +267,7 @@
             font-weight: 400;
             letter-spacing: 1px;
             font-size: 36px;
-            line-height: 1.1;
+            line-height: 1;
             color: #102770;
             transform: translate3d(0, 0, 30px) perspective(100px);
         }
@@ -297,7 +298,7 @@
         
         .link {
             position: relative;
-            padding: 10px 20px;
+            padding: 5px 10px;
             border-radius: 4px;
             display: inline-block;
             text-align: center;
@@ -481,11 +482,11 @@
     </style>
 </head>
 
-<body>
+<body style="overflow: hidden;">
 
-    <a onclick="document.location='https://www.xiiber.com'" class="logo">
-        <img src="fotos/elipsis.webp" alt="Xiiber Travel con destino a Tepozspa" width="33px" height="33px">
-    </a>
+
+    <img src="sgv/xiiber go.svg" alt="Xiiber Travel con destino a Tepozspa" width="33px" height="33px" onclick="document.location='https://www.xiiber.com'" class="logo">
+
 
     <div class="section over-hide">
         <div class="container">
@@ -493,9 +494,9 @@
                 <div class="col-12 text-center align-self-center py-5">
                     <div class="section text-center py-5 py-md-0">
                         <input class="pricing" type="checkbox" id="pricing" name="pricing" />
-                        <label for="pricing"><span class="block-diff">Vestidor<span class="float-right">Locker</span></span></label>
-                        <div class="card-3d-wrap mx-auto">
-                            <div class="card-3d-wrapper">
+                        <label for="pricing"><span class="block-diff">  Vestidor<span class="float-right">Locker</span></span></label>
+                        <div class="card-3d-wrap mx-auto"><br>
+                            <div class="card-3d-wrapper"><br>
                                 <div class="card-front">
                                     <div class="pricing-wrap">
                                         <h2 class="mb-5">Transporte y <br>acceso con vestidor</h2>
@@ -505,7 +506,7 @@
                                         <p class="mb-4">Transporte redondo y acceso <br>con vestidor. Cupo limitado</p>
                                         <a href="https://www.xiiber.com/viajes/tepozspa" class="link">Reservar</a>
                                         <div class="img-wrap img-2">
-                                            <img src="https://tepozspa.xiiber.com/fotos/sea.webp" alt="Sea">
+                                            <!--  <img src="https://tepozspa.xiiber.com/fotos/sea.webp" alt="Sea" width="400px" height="397px"> -->
                                         </div>
 
                                         <div class="img-wrap img-3">
